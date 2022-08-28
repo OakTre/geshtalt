@@ -1,0 +1,74 @@
+section.catalog
+  .site-container
+    h2.site-heading.catalog__heading Обучение гештальт-терапии
+    .catalog__container.grid-container
+      .catalog__block
+        span.catalog__section-name Институт современной гештальт-терапии предлагает программы базового и специализированного обучения
+        +button.catalog__btn.mod-transparent.mod-black Подробнее
+      .catalog__block
+        h3.catalog__legend Подготовительные курсы
+        ul.catalog__list
+          each i in Array.from(Array(3).keys())
+            li.catalog__item
+              .card
+                span.card__tag caption
+                h3.card__heading Курс 1
+                .card__info
+                  ul.card__info-list
+                    li.card__info-item
+                      span.card__info-legend Срок обучения
+                      span.card__info-text 1 год
+                    li.card__info-item
+                      span.card__info-legend Стоимость
+                      span.card__info-text 40 000 ₽
+                  p.card__info-descr
+                    | Инновационная специализированная программа,
+                    | которая объединяет подготовительный и экспериентальный
+                    | уровни обучения гештальт-терапии. и экспериентальный уровни обучения гештальт-терапии.
+                .card__btns
+                  +button.card__btn Записаться
+                  +button.card__btn.mod-transparent.mod-black Подробнее
+        h3.catalog__legend Основные направления
+        ul.catalog__list
+          each i in Array.from(Array(3).keys())
+            li.catalog__item
+              .card
+                span.card__tag 1 уровень
+                h3.card__heading Основы гештальт-терапии
+                .card__info
+                  ul.card__info-list
+                    li.card__info-item
+                      span.card__info-legend Срок обучения
+                      span.card__info-text 1 год
+                    li.card__info-item
+                      span.card__info-legend Стоимость
+                      span.card__info-text 40 000 ₽
+                  p.card__info-descr
+                    | Инновационная специализированная программа,
+                    | которая объединяет подготовительный и экспериентальный
+                    | уровни обучения гештальт-терапии. и экспериентальный уровни обучения гештальт-терапии.
+                .card__btns
+                  +button.card__btn Записаться
+                  +button.card__btn.mod-transparent.mod-black Подробнее
+        h3.catalog__legend Специализации
+        ul.catalog__list
+          each i in Array.from(Array(4).keys())
+            li.catalog__item
+              .card
+                span.card__tag 01
+                h3.card__heading Программа подготовки супервизоров
+                .card__info
+                  ul.card__info-list
+                    li.card__info-item
+                      span.card__info-legend Срок обучения
+                      span.card__info-text 1 год
+                    li.card__info-item
+                      span.card__info-legend Стоимость
+                      span.card__info-text 40 000 ₽
+                  p.card__info-descr
+                    | Инновационная специализированная программа,
+                    | которая объединяет подготовительный и экспериентальный
+                    | уровни обучения гештальт-терапии. и экспериентальный уровни обучения гештальт-терапии.
+                .card__btns
+                  +button.card__btn Записаться
+                  +button.card__btn.mod-transparent.mod-black Подробнее

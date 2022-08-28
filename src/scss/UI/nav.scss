@@ -1,0 +1,18 @@
+.nav {
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 2.4rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        font: var(--font-text-t2);
+      }
+    }
+  }
+}

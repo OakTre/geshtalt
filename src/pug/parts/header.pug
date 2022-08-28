@@ -1,0 +1,22 @@
+-
+  const nav = [
+    'Об институте',
+    'Преподаватели',
+    'Список литературы',
+    'Пресс-центр',
+    'Контакты'
+  ]
+
+header.header.visually-hidden
+  .site-container.header__container.grid-container
+    .header__block
+      a.header__logo(href="/")
+        img(src="assets/images/logo.svg" alt="Логотип компании")
+    .header__block
+      a(href="/" class="header__legend-link") Образование
+      a(href="/" class="header__legend-link") Мероприятия
+      nav.header__nav.nav
+        ul
+          for item in nav
+            li #[a(href="/")= item]
+      +button(class="header__btn") Учиться

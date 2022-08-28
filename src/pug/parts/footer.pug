@@ -1,0 +1,41 @@
+-
+  const footer_nav = [
+    'Об институте',
+    'Преподаватели',
+    'Список литературы',
+    'Пресс-центр',
+    'Контакты'
+  ]
+
+footer.footer
+  img(src="assets/images/footer-bg.svg" alt="" class="footer__bg-img")
+  .site-container
+    .grid-container
+      .footer__block
+        a.footer__logo(href="/")
+          img(src="assets/images/logo-small.svg" alt="Логотип компании")
+      .footer__block
+        a.footer__legend-link(href="/") Образование
+        a.footer__legend-link(href="/") Мероприятия
+        nav.footer__nav
+          ul
+            for item in footer_nav
+              li #[a(href="/")= item]
+      .footer__block
+        ul.socials.footer__socials
+          li.socials__item
+            a.socials__link(href="/")
+              +icon-mono("wt")(width="24" height="24" class="socials__icon")
+          li.socials__item
+            a.socials__link(href="/")
+              +icon-mono("tg")(width="24" height="24" class="socials__icon")
+        p.footer__text пн-пт 10:00 — 18:00
+        p.footer__text 420012, Республика Татарстан, Казань ул. Достоевского 4
+
+        a(href="/" class="footer__text _tel") +7 (917) 290–08–80
+    .grid-container.footer__copyright
+      .footer__copyright-block
+      .footer__copyright-block
+        a.footer__copyright-text(href="/") Политика конфиденциальности
+      .footer__copyright-block
+        p.footer__copyright-text © 2019 Поволжский институт гештальт-терапии

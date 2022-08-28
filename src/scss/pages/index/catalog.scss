@@ -1,0 +1,55 @@
+.catalog {
+  margin-bottom: 12.6rem;
+
+  &__heading {
+    max-width: 138.6rem;
+    margin-bottom: 10rem;
+  }
+
+  &__container {
+    padding-top: 10rem;
+    border-top: 1px solid var(--color-black-alfa40);
+  }
+
+  &__block {
+    &:nth-child(1) {
+      grid-column: 3 span;
+    }
+
+    &:nth-child(2) {
+      grid-column: 9 span;
+    }
+  }
+
+  &__section-name {
+    display: block;
+    font: var(--font-text-t1);
+    letter-spacing: -0.02em;
+    max-width: 27.3rem;
+  }
+
+  &__btn {
+    margin-top: 2.4rem;
+  }
+
+  &__legend {
+    font: var(--font-h2);
+    margin-bottom: 6rem;
+    letter-spacing: -0.06em;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 3.4rem var(--grid-offset);
+    margin-bottom: 10rem;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    grid-column: 3 span;
+  }
+}

@@ -1,0 +1,25 @@
+.button {
+  padding: 1.05rem 2rem;
+  border-radius: 9rem;
+  background-color: var(--color-primary-blue);
+  font: var(--font-btn);
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &.mod-white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  &.mod-transparent {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white-alfa20);
+  }
+
+  &.mod-black {
+    border-color: var(--color-black-alfa20);
+    color: var(--color-black);
+  }
+}

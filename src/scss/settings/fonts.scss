@@ -1,0 +1,25 @@
+@font-face {
+	font-weight: 400;
+	font-family: "Berlin";
+	font-style: normal;
+	font-display: swap;
+	src:
+    local("BerlinType"),
+    local("BerlinType-Regular"),
+    local("BerlinType-Regular"),
+		url("../fonts/BerlinTypeWeb-Regular.woff2") format("woff2"),
+		url("../fonts/BerlinTypeWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: "Berlin";
+	font-style: normal;
+	font-display: swap;
+	src:
+    local("BerlinType"),
+    local("BerlinType-Bold"),
+    local("BerlinType-Bold"),
+		url("../fonts/BerlinTypeWeb-Bold.woff2") format("woff2"),
+		url("../fonts/BerlinTypeWeb-Bold.woff") format("woff");
+}

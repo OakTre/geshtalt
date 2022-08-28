@@ -1,0 +1,49 @@
+:root {
+	// Typography
+	--main-ff: "Berlin", sans-serif;
+
+	// colors
+	--color-primary-blue: #28357C;
+	--color-primary-light-blue: #4454AC;
+  --color-secondary-blue: #3CBBED;
+  --color-black: #19191B;
+  --color-black-alfa20: rgba(31, 32, 36, 0.2);
+  --color-black-alfa40: rgba(47, 50, 65, 0.4);
+  --color-grey-300: #F4F5FA;
+	--color-white: #ffffff;
+  --color-white-alfa20: rgba(255, 255, 255, 0.2);
+  --color-white-alfa40: rgba(255, 255, 255, 0.4);
+	--color-bg: var(--color-white);
+
+  // fonts
+  --font-hero: 400 18rem/0.85 var(--main-ff);
+  --font-h1: 400 10.4rem/0.85 var(--main-ff);
+  --font-h2: 400 5.6rem/0.9 var(--main-ff);
+  --font-h3: 400 3.6rem/0.85 var(--main-ff);
+  --font-h4: 400 2.6rem/1 var(--main-ff);
+
+  --font-text-t1: 400 2rem/1.1 var(--main-ff);
+  --font-text-t2: 400 1.6rem/1.1 var(--main-ff);
+
+  --font-btn: 400 1.6rem/1.2 var(--main-ff);
+  --font-caption: 400 1.3rem/1.2 var(--main-ff);
+
+  // etc
+  --content-padding: 60px;
+  --grid-offset: 20px;
+  --header-height: 10.8rem
+}
+
+@import "./helpers/**/*";
+@import './vendor/**/*';
+@import "./settings/**/*";
+@import "./UI/**/*";
+@import './pages/**/*';
+
+
+
+@include mq(custom, max, 1536) {
+  :root {
+    --content-padding: 30px;
+  }
+}
