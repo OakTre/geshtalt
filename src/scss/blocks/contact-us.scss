@@ -1,0 +1,41 @@
+.contact-us {
+  height: 88rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-black-alfa40);
+  color: var(--color-white);
+  padding-bottom: 11.1rem;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    max-width: 50.7rem;
+  }
+
+  &__content-text {
+    padding-top: 2.7rem;
+    border-top: 1px solid var(--color-white);
+    padding-bottom: 17.2rem;
+    border-bottom: 1px solid var(--color-white);
+    margin-bottom: 2.8rem;
+
+    p {
+      font: var(--font-h2);
+      letter-spacing: -0.06em;
+    }
+  }
+
+  &__info {
+    font: 400 2.4rem/110% var(--main-ff);
+    margin-bottom: 4.4rem;
+  }
+}
