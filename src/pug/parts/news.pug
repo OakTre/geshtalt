@@ -1,19 +1,21 @@
-section.news
+section.news.js-parent-page-slider(data-slides-number="3")
   .site-container.news__container
     h2.site-second-heading.news__heading Пресс-центр
     .grid-container.news__container
       .news__block
         .slider-nav.news__nav
-          button.slider-nav__btn
+          button.slider-nav__btn.js-slider-btn-prev
             +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
-          button.slider-nav__btn
+          button.slider-nav__btn.js-slider-btn-next
             +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
       .news__block
-        ul.news__list
-          li.news__item
-            .news-card
-              .news-card__header
-                span.news-card__tag 12 ноя 2022
-                img(src="assets/images/news-card.jpg" class="news-card__img" alt="«Как психолог помогает мне пережить происходящее вокруг?»")
-              a.news-card__link(href="/") «Как психолог помогает мне пережить происходящее вокруг?»
+        ul.news__list.swiper.js-page-slider
+          .swiper-wrapper
+            each i in Array.from(Array(5).keys())
+              li.news__item.swiper-slide
+                .news-card
+                  .news-card__header
+                    span.news-card__tag 12 ноя 2022
+                    img(src="assets/images/news-card.jpg" class="news-card__img" alt="«Как психолог помогает мне пережить происходящее вокруг?»")
+                  a.news-card__link(href="/") «Как психолог помогает мне пережить происходящее вокруг?»
         button.news__btn Смотреть все

@@ -1,0 +1,11 @@
+extends layout/default.pug
+
+block variables
+  - const bodyClass = "page-home"
+  - const pageTitle = "Мероприятия"
+  - const siteLang = "ru"
+  - const name = "events"
+  - const headerWhite = true
+
+block content
+  include pages/events/main.pug

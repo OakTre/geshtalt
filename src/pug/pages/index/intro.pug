@@ -28,22 +28,24 @@ section.intro(style={'background-image': 'url(assets/images/intro-img.jpg)'})
           li.intro__cat-item
             a.intro__cat-link(href="/") Контакты
       .intro__bottom-block
-        .intro__slider
+        .intro__slider.js-parent-page-slider(data-slides-number="1")
           .intro__slider-nav-container
             span.intro__slider-legend Мероприятие
             .intro__slider-nav
-              button.intro__slider-btn
+              button.intro__slider-btn.js-slider-btn-prev
                 +icon-mono("shevron-left")(width="7" height="14" class="intro__slider-btn-icon")
-              button.intro__slider-btn
+              button.intro__slider-btn.js-slider-btn-next
                 +icon-mono("shevron-left")(width="7" height="14" class="intro__slider-btn-icon")
-          .intro__news
-            .intro__news-item
-              .intro__news-date
-                .intro__news-month 28 Октября
-                .intro__news-year 2022
-              .intro__news-heading XIV Поволжский интенсив «Волжские встречи»
-              p.intro__news-text Интенсив – это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
-              .intro__news-btns
-                +button.intro__news-btn.mod-white ЗАписаться
-                +button.intro__news-btn.mod-transparent Подробнее
+          .intro__news.swiper.js-page-slider
+            .swiper-wrapper
+              each i in Array.from(Array(3).keys())
+                .intro__news-item.swiper-slide
+                  .intro__news-date
+                    .intro__news-month 28 Октября
+                    .intro__news-year 2022
+                  .intro__news-heading XIV Поволжский интенсив «Волжские встречи»
+                  p.intro__news-text Интенсив – это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
+                  .intro__news-btns
+                    +button.intro__news-btn.mod-white ЗАписаться
+                    +button.intro__news-btn.mod-transparent Подробнее
 

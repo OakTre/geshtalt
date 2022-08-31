@@ -1,0 +1,29 @@
+section.events.events--page
+  .site-container.events__container
+    .events__heading-wrapper
+      h2.site-heading.events__heaing Мероприятия
+      .events__heading-info
+        p Мы постоянно проводим образовательные мероприятия, приглашаем опытных специалистов на лекции
+    +filter(["Новости", "СМИ о нас"])(class="events__filter")
+    ul.events__list
+      each i in Array.from(Array(3).keys())
+        li.events__item
+          article.event
+            .event__block
+              span.event__legend 2022
+              .event__date
+                span.event__date-start 24 Июн
+                span.event__date-end — 11 Авг
+            .event__block
+              header.event__info
+                span.event__legend Интенсив
+                a.event__link(href="./events-detail.html") XIV Поволжский интенсив «Волжские встречи»
+                p.event__text
+                  | Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
+              .event__img-wrapper
+                img.lazyload(src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»" class="event__img")
+    .events__grid-container
+      .events__block
+      .events__block
+        button.events__more-btn
+          | Показать еще

@@ -226,3 +226,13 @@ button:focus {
   font: var(--font-h1);
   letter-spacing: -0.06em;
 }
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}

@@ -1,0 +1,41 @@
+section.detail-section
+  img(src="assets/images/detail-bg.svg" class="detail-section__bg-img" alt="")
+  .site-container
+    .detail-section__grid-container
+      .detail-section__block
+        span.detail-section__section-name.section-name Мероприятия
+      .detail-section__block
+        h1.detail-section__heading XIV Поволжский интенсив «Волжские встречи»
+        .detail-section__info
+          +button(class="detail-section__btn") Записаться
+          .detail-section__date
+            span.detail-section__date-legend Дата проведения
+            span.detail-section__date-num 24 Июн, 19:00
+    .detail-section__content
+      ._block
+      ._block
+        h2 Тема интенсива 2022 года — «SELF как творческий процесс»
+        p
+          | На интенсиве мы продолжим тему Self как процесса контакта,
+          | с вниманием к его творческим аспектам. Осознавание в постоянно меняющемся поле «организм-среда»,
+          | ориентация в сложных динамичных соотношениях собственных потребностей, интенций и потенциальных возможностей
+          | с учетом обстоятельств жизненного мира, поиск способов взаимодействия в диалоге с другими – все это создает новые фигуры, изменяя фон.
+        p
+          | На интенсиве мы продолжим тему Self как процесса контакта,
+          | с вниманием к его творческим аспектам. Осознавание в постоянно меняющемся поле «организм-среда»,
+          | ориентация в сложных динамичных соотношениях собственных потребностей, интенций и потенциальных возможностей
+          | с учетом обстоятельств жизненного мира, поиск способов взаимодействия в диалоге с другими – все это создает новые фигуры, изменяя фон.
+    .detail-section__content-imgs.js-parent-page-slider(data-slides-number="1")
+      ._block
+        .slider-nav.detail-section__slider-nav
+          button.slider-nav__btn.js-slider-btn-prev
+            +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
+          button.slider-nav__btn.js-slider-btn-next
+            +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
+      ._block
+        .detail-section__content-slider.swiper.js-page-slider
+          .swiper-wrapper
+            each i in Array.from(Array(3).keys())
+              .swiper-slide.detail-section__content-slide
+                img.lazyload(data-src="assets/images/slider/img1.jpg" src="#" alt="")
+

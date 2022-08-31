@@ -1,8 +1,21 @@
 .catalog {
   margin-bottom: 12.6rem;
 
+  &--page {
+    .catalog__heading {
+      margin-bottom: 6rem;
+    }
+  }
+
   &__heading {
     max-width: 138.6rem;
+    margin-bottom: 10rem;
+  }
+
+  &__text {
+    font: var(--font-h4);
+    letter-spacing: -0.02em;
+    max-width: 76.7rem;
     margin-bottom: 10rem;
   }
 

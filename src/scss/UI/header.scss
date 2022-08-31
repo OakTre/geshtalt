@@ -1,7 +1,33 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
   display: flex;
   align-items: center;
   height: var(--header-height);
+
+  .logo-white {
+    display: none;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 24.6rem;
+  }
+
+  &--white {
+    color: var(--color-white);
+
+    .logo-black {
+      display: none;
+    }
+
+    .logo-white {
+      display: block;
+    }
+  }
 
   &__block {
     &:nth-child(1) {

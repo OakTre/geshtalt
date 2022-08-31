@@ -7,14 +7,15 @@
     'Контакты'
   ]
 
-header.header.visually-hidden
+header.header(class={'visually-hidden': name === "main"} class={'header--white': headerWhite})
   .site-container.header__container.grid-container
     .header__block
       a.header__logo(href="/")
-        img(src="assets/images/logo.svg" alt="Логотип компании")
+        img(src="assets/images/logo.svg" alt="Логотип компании" class="logo-black")
+        img(src="assets/images/logo-white.svg" alt="Логотип компании" class="logo-white")
     .header__block
-      a(href="/" class="header__legend-link") Образование
-      a(href="/" class="header__legend-link") Мероприятия
+      a(href="./education.html" class="header__legend-link") Образование
+      a(href="./events.html" class="header__legend-link") Мероприятия
       nav.header__nav.nav
         ul
           for item in nav
