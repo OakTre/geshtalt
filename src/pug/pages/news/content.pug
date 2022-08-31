@@ -1,0 +1,22 @@
+section.news-page-content
+  .site-container
+    +filter(["Новости", "СМИ о нас"])
+    .news-cart.news-cart--big
+      ._block
+        img(src="assets/images/news/img.jpg" class="news-cart__img" alt="«Как психолог помогает мне пережить происходящее вокруг?»")
+      ._block
+        span.news-cart__legend 12 ноя 2022
+        a.news-cart__heading(href="./news-detail.html")  «Как психолог помогает мне пережить происходящее вокруг?»
+    .news-page-content__grid-container
+      ._grid-block
+      ._grid-block
+        ul.news-page-content__list
+          each i in Array.from(Array(3).keys())
+            li.news-page-content__item
+              .news-cart
+                ._block
+                  img(src="assets/images/news/img.jpg" class="news-cart__img" alt="«Как психолог помогает мне пережить происходящее вокруг?»")
+                ._block
+                  span.news-cart__legend 12 ноя 2022
+                  a.news-cart__heading(href="./news-detail.html")  «Как психолог помогает мне пережить происходящее вокруг?»
+        button.news-page-content__show-more ПОказать еще

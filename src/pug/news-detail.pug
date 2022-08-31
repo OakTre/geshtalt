@@ -1,0 +1,10 @@
+extends layout/default.pug
+
+block variables
+  - const bodyClass = "page-home"
+  - const pageTitle = "Новости детальная"
+  - const siteLang = "ru"
+  - const name = "news-detail"
+
+block content
+  include pages/news-page-detail/main.pug

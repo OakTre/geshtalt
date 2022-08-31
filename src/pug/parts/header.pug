@@ -1,10 +1,25 @@
 -
   const nav = [
-    'Об институте',
-    'Преподаватели',
-    'Список литературы',
-    'Пресс-центр',
-    'Контакты'
+    {
+      name: 'Об институте',
+      link: './'
+    },
+    {
+      name: 'Преподаватели',
+      link: ''
+    },
+    {
+      name: 'Список литературы',
+      link: ''
+    },
+    {
+      name: 'Пресс-центр',
+      link: './news.html'
+    },
+    {
+      name: 'Контакты',
+      link: './contacts.html'
+    }
   ]
 
 header.header(class={'visually-hidden': name === "main"} class={'header--white': headerWhite})
@@ -19,5 +34,5 @@ header.header(class={'visually-hidden': name === "main"} class={'header--white':
       nav.header__nav.nav
         ul
           for item in nav
-            li #[a(href="/")= item]
+            li #[a(href=item.link)= item.name]
       +button(class="header__btn") Учиться

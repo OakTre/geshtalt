@@ -1,0 +1,35 @@
+.contacts-intro {
+  &__heading {
+    padding-bottom: 10rem;
+    margin-bottom: 10rem;
+    border-bottom: 1px solid var(--color-black-alfa20);
+  }
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--grid-offset);
+
+    ._block {
+      &:nth-child(1) {
+        grid-column: 3 span;
+      }
+
+      &:nth-child(2) {
+        grid-column: 9 span;
+      }
+    }
+  }
+
+  &__tel {
+    display: inline-block;
+    font: var(--font-h2);
+    margin-bottom: 7rem;
+  }
+
+  &__txt {
+    max-width: 58.5rem;
+    font: var(--font-h4);
+    margin-bottom: 3rem;
+  }
+}
