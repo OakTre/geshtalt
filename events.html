@@ -49,6 +49,8 @@
               </ul>
             </nav>
             <button class="button header__btn">Учиться</button>
+            <button class="header__burger-btn" aria-label="Бергерное меню"><span></span><span></span><span></span>
+            </button>
           </div>
         </div>
       </header>
@@ -58,7 +60,7 @@
         <section class="events events--page">
           <div class="site-container events__container">
             <div class="events__heading-wrapper">
-              <h2 class="site-heading events__heaing">Мероприятия</h2>
+              <h2 class="site-heading events__heaing">Мероприя<br>тия</h2>
               <div class="events__heading-info">
                 <p>Мы постоянно проводим образовательные мероприятия, приглашаем опытных специалистов на лекции</p>
               </div>
@@ -82,7 +84,12 @@
 
                     <header class="event__info"><span class="event__legend">Интенсив</span>
                       <a class="event__link" href="./events-detail.html">XIV Поволжский интенсив «Волжские встречи»</a>
-                      <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      <div class="event__text-wrapper">
+                        <svg class="icon icon-arrow-bottom events__icon" width="24" heihgt="24">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-bottom"></use>
+                        </svg>
+                        <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      </div>
                     </header>
                     <div class="event__img-wrapper">
                       <img class="lazyload event__img" src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»">
@@ -100,7 +107,12 @@
 
                     <header class="event__info"><span class="event__legend">Интенсив</span>
                       <a class="event__link" href="./events-detail.html">XIV Поволжский интенсив «Волжские встречи»</a>
-                      <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      <div class="event__text-wrapper">
+                        <svg class="icon icon-arrow-bottom events__icon" width="24" heihgt="24">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-bottom"></use>
+                        </svg>
+                        <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      </div>
                     </header>
                     <div class="event__img-wrapper">
                       <img class="lazyload event__img" src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»">
@@ -118,7 +130,12 @@
 
                     <header class="event__info"><span class="event__legend">Интенсив</span>
                       <a class="event__link" href="./events-detail.html">XIV Поволжский интенсив «Волжские встречи»</a>
-                      <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      <div class="event__text-wrapper">
+                        <svg class="icon icon-arrow-bottom events__icon" width="24" heihgt="24">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-bottom"></use>
+                        </svg>
+                        <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      </div>
                     </header>
                     <div class="event__img-wrapper">
                       <img class="lazyload event__img" src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»">
@@ -149,12 +166,12 @@
       </main>
 
       <footer class="footer">
-        <img class="footer__bg-img" src="assets/images/footer-bg.svg" alt="">
         <div class="site-container">
           <div class="grid-container">
             <div class="footer__block">
               <a class="footer__logo" href="/">
-                <img src="assets/images/logo-small.svg" alt="Логотип компании">
+                <img class="footer__logo-descktop" src="assets/images/logo-small.svg" alt="Логотип компании">
+                <img class="footer__logo-mobile" src="assets/images/logo.svg" alt="Логотип компании">
               </a>
             </div>
             <div class="footer__block">

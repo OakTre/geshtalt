@@ -49,6 +49,8 @@
               </ul>
             </nav>
             <button class="button header__btn">Учиться</button>
+            <button class="header__burger-btn" aria-label="Бергерное меню"><span></span><span></span><span></span>
+            </button>
           </div>
         </div>
       </header>
@@ -78,7 +80,7 @@
                 <p>На интенсиве мы продолжим тему Self как процесса контакта, с вниманием к его творческим аспектам. Осознавание в постоянно меняющемся поле «организм-среда», ориентация в сложных динамичных соотношениях собственных потребностей, интенций и потенциальных возможностей с учетом обстоятельств жизненного мира, поиск способов взаимодействия в диалоге с другими – все это создает новые фигуры, изменяя фон.</p>
               </div>
             </div>
-            <div class="detail-section__content-imgs js-parent-page-slider" data-slides-number="1">
+            <div class="detail-section__content-imgs js-parent-page-slider" data-slides-number="1" data-slides-number-mobile="1">
               <div class="_block">
                 <div class="slider-nav detail-section__slider-nav">
                   <button class="slider-nav__btn js-slider-btn-prev">
@@ -125,7 +127,12 @@
 
                     <header class="event__info"><span class="event__legend">Интенсив</span>
                       <a class="event__link" href="./events-detail.html">XIV Поволжский интенсив «Волжские встречи»</a>
-                      <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      <div class="event__text-wrapper">
+                        <svg class="icon icon-arrow-bottom events__icon" width="24" heihgt="24">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-bottom"></use>
+                        </svg>
+                        <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      </div>
                     </header>
                     <div class="event__img-wrapper">
                       <img class="lazyload event__img" src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»">
@@ -143,7 +150,12 @@
 
                     <header class="event__info"><span class="event__legend">Интенсив</span>
                       <a class="event__link" href="./events-detail.html">XIV Поволжский интенсив «Волжские встречи»</a>
-                      <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      <div class="event__text-wrapper">
+                        <svg class="icon icon-arrow-bottom events__icon" width="24" heihgt="24">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-bottom"></use>
+                        </svg>
+                        <p class="event__text">Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
+                      </div>
                     </header>
                     <div class="event__img-wrapper">
                       <img class="lazyload event__img" src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»">
@@ -174,12 +186,12 @@
       </main>
 
       <footer class="footer">
-        <img class="footer__bg-img" src="assets/images/footer-bg.svg" alt="">
         <div class="site-container">
           <div class="grid-container">
             <div class="footer__block">
               <a class="footer__logo" href="/">
-                <img src="assets/images/logo-small.svg" alt="Логотип компании">
+                <img class="footer__logo-descktop" src="assets/images/logo-small.svg" alt="Логотип компании">
+                <img class="footer__logo-mobile" src="assets/images/logo.svg" alt="Логотип компании">
               </a>
             </div>
             <div class="footer__block">
