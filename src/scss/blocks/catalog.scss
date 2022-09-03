@@ -1,6 +1,10 @@
 .catalog {
   margin-bottom: 12.6rem;
 
+  @include mq(sm) {
+    margin-bottom: 6rem;
+  }
+
   &--page {
     .catalog__heading {
       margin-bottom: 6rem;
@@ -10,6 +14,10 @@
   &__heading {
     max-width: 138.6rem;
     margin-bottom: 10rem;
+
+    @include mq(md) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__text {
@@ -22,15 +30,53 @@
   &__container {
     padding-top: 10rem;
     border-top: 1px solid var(--color-black-alfa40);
+
+    @include mq(xl) {
+      display: block;
+    }
+
+    @include mq(md) {
+      padding-top: 4rem;
+    }
+
+    @include mq(sm) {
+      padding-top: 2.2rem;
+    }
   }
 
   &__block {
     &:nth-child(1) {
       grid-column: 3 span;
+
+      @include mq(lg) {
+        margin-bottom: 2.4rem;
+      }
+
+      @include mq(md) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 5.8rem;
+      }
     }
 
     &:nth-child(2) {
       grid-column: 9 span;
+      counter-reset: section;
+    }
+  }
+
+  &__icon {
+    display: none;
+    flex-shrink: 0;
+    fill: none;
+    stroke: var(--color-black-alfa20);
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke-width: 2px;
+
+    @include mq(md) {
+      display: block;
     }
   }
 
@@ -39,16 +85,47 @@
     font: var(--font-text-t1);
     letter-spacing: -0.02em;
     max-width: 27.3rem;
+
+    @include mq(sm) {
+      font: var(--font-text-t2-mobile2);
+    }
   }
 
   &__btn {
     margin-top: 2.4rem;
+
+    @include mq(md) {
+      display: none;
+    }
   }
 
   &__legend {
     font: var(--font-h2);
     margin-bottom: 6rem;
     letter-spacing: -0.06em;
+
+    @include mq(md) {
+      font: var(--font-h3);
+      margin-bottom: 2.8rem;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 1.2rem;
+
+      span {
+        display: block;
+        grid-column: 4 span;
+      }
+
+      &::before {
+        grid-column: 2 span;
+        counter-increment: section;
+        content: "0" counter(section);
+      }
+    }
+
+    @include mq(sm) {
+      font: var(--font-h2-mobile);
+    }
   }
 
   &__list {
@@ -60,9 +137,35 @@
     &:nth-last-of-type(1) {
       margin-bottom: 0;
     }
+
+    @include mq(md) {
+      display: flex;
+      grid-template-columns: none;
+      gap: 0;
+      overflow-x: auto;
+      width: auto;
+      margin-right: calc(var(--content-padding) * -1);
+      padding-right: var(--content-padding);
+
+      @include noScrollbar();
+    }
+
+    @include mq(sm) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__item {
     grid-column: 3 span;
+
+    @include mq(md) {
+      flex-shrink: 0;
+      margin-right: 1.2rem;
+      max-width: 90%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

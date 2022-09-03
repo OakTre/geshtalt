@@ -22,4 +22,8 @@
     border-color: var(--color-black-alfa20);
     color: var(--color-black);
   }
+
+  @include mq(sm) {
+    font: var(--font-text-t2-mobile2);
+  }
 }

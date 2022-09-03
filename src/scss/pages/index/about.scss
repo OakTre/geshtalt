@@ -3,6 +3,15 @@
   padding-top: 24.7rem;
   margin-bottom: 18.2rem;
 
+  @include mq(lg) {
+    padding-top: 12.3rem;
+    margin-bottom: 10rem;
+  }
+
+  @include mq(sm) {
+    margin-bottom: 8.3rem;
+  }
+
   &__bg-top {
     position: absolute;
     top: 0;
@@ -13,11 +22,19 @@
     opacity: 0.1;
     user-select: none;
     border-radius: 0 0 14.3rem 0;
+
+    @include mq(md) {
+      display: none;
+    }
   }
 
   &__block {
     &:nth-child(1) {
       grid-column: 3 span;
+
+      @include mq(md) {
+        display: none;
+      }
     }
 
     &:nth-child(2) {
@@ -37,6 +54,16 @@
     margin-bottom: 6.4rem;
     letter-spacing: -0.06em;
     max-width: 103.3rem;
+
+    @include mq(md) {
+      font: var(--font-h3);
+      margin-bottom: 4rem;
+    }
+
+    @include mq(sm) {
+      font: var(--font-h2-mobile);
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__content {
@@ -47,6 +74,14 @@
     p {
       font: var(--font-text-t1);
       letter-spacing: -0.02em;
+
+      @include mq(sm) {
+        font: var(--font-text-t1-mobile);
+      }
+    }
+
+    @include mq(md) {
+      display: block;
     }
   }
 
@@ -62,6 +97,10 @@
 
   &__btn {
     margin-top: 4rem;
+
+    @include mq(sm) {
+      margin-top: 2.4rem;
+    }
   }
 
   &__content-img-wrapper {
@@ -72,5 +111,37 @@
     background-size: contain;
     border-radius: 24.7rem 0px 0px 24.7rem;
     margin-right: -100%;
+
+    @include mq(md) {
+      display: none;
+    }
+
+    &._mobile {
+      display: none;
+
+      @include mq(md) {
+        display: block;
+        margin-bottom: 4rem;
+      }
+
+      @include mq(sm) {
+        height: 26.2rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__mobile-text-wrapper {
+    display: none;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+
+    @include mq(md) {
+      display: flex;
+    }
+  }
+
+  &__mobile-text {
+    max-width: 70%;
   }
 }

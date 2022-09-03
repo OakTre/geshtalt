@@ -19,10 +19,14 @@ export default () => {
       },
       breakpoints: {
         280: {
-          slidesPerView: 1,
+          slidesPerView: Number(slider.closest(".js-parent-page-slider").dataset.slidesNumberMobile) || 1.1,
           spaceBetween: 10,
         },
         767: {
+          slidesPerView: Number(slider.closest(".js-parent-page-slider").dataset.slidesNumberMobile) || 2,
+          spaceBetween: 16,
+        },
+        992: {
           slidesPerView: Number(slider.closest(".js-parent-page-slider").dataset.slidesNumber) || 3,
           spaceBetween: 16,
         },

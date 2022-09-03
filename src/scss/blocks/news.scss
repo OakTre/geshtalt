@@ -2,11 +2,28 @@
   margin-bottom: 12rem;
   padding-top: 12rem;
 
+  @include mq(sm) {
+    margin-bottom: 6rem;
+    padding-top: 6rem;
+  }
+
   &__heading {
     margin-bottom: 10rem;
+
+    @include mq(md) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__nav {
+    @include mq(md) {
+      display: none;
+    }
   }
 
   &__block {
+    min-width: 0;
+
     &:nth-child(1) {
       grid-column: 3 span;
     }
@@ -26,9 +43,19 @@
     text-transform: uppercase;
     text-align: center;
     display: block;
+
+    @include mq(sm) {
+      display: none;
+    }
   }
 
   &__list {
     margin-bottom: 3.6rem;
+
+    @include mq(sm) {
+      width: auto;
+      margin-right: calc(var(--content-padding) * -1);
+      padding-right: var(--content-padding);
+    }
   }
 }

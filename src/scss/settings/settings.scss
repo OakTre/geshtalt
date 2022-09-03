@@ -12,12 +12,45 @@ html {
   @include mq(custom, min, 2000) {
     font-size: 12px;
   }
+
+  @include mq(custom, max, 1680) {
+    font-size: 9px;
+  }
+
+  @include mq(custom, max, 1440) {
+    font-size: 8px;
+  }
+
+  @include mq(lg) {
+    font-size: 7px;
+  }
+
+  @include mq(md) {
+    font-size: 8px;
+  }
+
+  @include mq(sm) {
+    font-size: 10px;
+  }
+
+  @include mq(custom, max, 350) {
+    font-size: 9px;
+  }
+
+  @include mq(custom, max, 320) {
+    font-size: 8px;
+  }
 }
 
 body {
   color: var(--color-black);
   font: var(--font-text-t1);
   background-color: var(--color-bg);
+
+  ::selection {
+    background-color: var(--color-primary-light-blue);
+    color: var(--color-white);
+  }
 }
 
 ul,
@@ -205,6 +238,10 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-offset);
+
+  @include mq(md) {
+    display: block;
+  }
 }
 
 
@@ -215,16 +252,32 @@ button:focus {
   text-transform: uppercase;
   color: var(--color-black-alfa40);
   margin-bottom: 1.6rem;
+
+  @include mq(sm) {
+    font: var(--font-text-t2-mobile);
+  }
 }
 
 .site-heading {
   font: var(--font-hero);
   letter-spacing: -0.06em;
+
+  @include mq(md) {
+    font: var(--font-h2);
+  }
+
+  @include mq(sm) {
+    font: var(--font-hero-mobile);
+  }
 }
 
 .site-second-heading {
   font: var(--font-h1);
   letter-spacing: -0.06em;
+
+  @include mq(md) {
+    font: var(--font-h2);
+  }
 }
 
 .lazyload,
@@ -239,6 +292,14 @@ button:focus {
 
 .top-offset {
   padding-top: 27rem;
+
+  @include mq(md) {
+    padding-top: 15rem;
+  }
+
+  @include mq(sm) {
+    padding-top: 11.6rem;
+  }
 }
 
 .page-intro-heading {

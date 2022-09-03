@@ -1,8 +1,24 @@
 .contacts-intro {
+  margin-bottom: 10rem;
+
+  @include mq(sm) {
+    margin-bottom: 7rem;
+  }
+
   &__heading {
     padding-bottom: 10rem;
     margin-bottom: 10rem;
     border-bottom: 1px solid var(--color-black-alfa20);
+
+    @include mq(md) {
+      margin-bottom: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 4.8rem;
+      padding-bottom: 2.8rem;
+    }
   }
 
   &__grid-container {
@@ -19,17 +35,65 @@
         grid-column: 9 span;
       }
     }
+
+    @include mq(lg) {
+      display: block;
+    }
   }
 
   &__tel {
     display: inline-block;
     font: var(--font-h2);
     margin-bottom: 7rem;
+
+    @include mq(md) {
+      font: var(--font-h3);
+    }
+
+    @include mq(sm) {
+      font: var(--font-h2-mobile);
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__txt {
     max-width: 58.5rem;
     font: var(--font-h4);
     margin-bottom: 3rem;
+
+    @include mq(sm) {
+      font: var(--font-text-t1);
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__socials-wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: var(--grid-offset);
+    align-items: end;
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &__socials {
+    grid-column: 5 span;
+
+    @include mq(sm) {
+      margin-bottom: 6.7rem;
+    }
+  }
+
+  &__adress {
+    grid-column: 4 span;
+    padding-top: 4rem;
+    border-top: 1px solid var(--color-black-alfa20);
+    font: var(--font-text-t1);
+
+    p {
+      margin-bottom: 2rem;
+    }
   }
 }

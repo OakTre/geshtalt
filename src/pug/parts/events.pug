@@ -2,8 +2,10 @@ section.events
   img(src="assets/images/events/bg.svg" class="events__bg-img" alt="")
   .site-container.events__container
     .events__heading-wrapper
-      h2.site-heading.events__heaing Мероприятия
+      h2.site-heading.events__heaing Мероприя#[br]тия
       .events__heading-info
+        a(href="/")
+          +icon-mono("arrow-bottom")(class="events__icon" width="24" heihgt="24")
         p Мы постоянно проводим образовательные мероприятия, приглашаем опытных специалистов на лекции
         +button(class="events__btn mod-transparent")
           | Подробнее
@@ -20,9 +22,12 @@ section.events
               header.event__info
                 span.event__legend Интенсив
                 a.event__link(href="./events-detail.html") XIV Поволжский интенсив «Волжские встречи»
-                p.event__text
-                  | Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
+                .event__text-wrapper
+                  +icon-mono("arrow-bottom")(class="events__icon" width="24" heihgt="24")
+                  p.event__text
+                    | Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
               .event__img-wrapper
+                +button(class="mod-white event__mobile-btn") ЗАписаться
                 img.lazyload(src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»" class="event__img")
     .events__grid-container
       .events__block

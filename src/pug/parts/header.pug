@@ -22,7 +22,7 @@
     }
   ]
 
-header.header(class={'visually-hidden': name === "main"} class={'header--white': headerWhite})
+header.header(class={'is-hidden header--white': name === "main"} class={'header--white': headerWhite})
   .site-container.header__container.grid-container
     .header__block
       a.header__logo(href="/")
@@ -36,3 +36,7 @@ header.header(class={'visually-hidden': name === "main"} class={'header--white':
           for item in nav
             li #[a(href=item.link)= item.name]
       +button(class="header__btn") Учиться
+      button.header__burger-btn(aria-label="Бергерное меню")
+        span
+        span
+        span

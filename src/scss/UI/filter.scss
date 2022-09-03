@@ -5,6 +5,11 @@
   border-top: 1px solid var(--color-black-alfa20);
   margin-bottom: 7.2rem;
 
+  @include mq(sm) {
+    padding-top: 1.8rem;
+    margin-bottom: 4rem;
+  }
+
   &__item {
     position: relative;
     display: block;
@@ -33,6 +38,10 @@
     font: var(--font-text-t1);
     padding-left: 2.6rem;
     letter-spacing: -0.02em;
+
+    @include mq(sm) {
+      font: var(--font-text-t1-mobile);
+    }
 
     &::before {
       position: absolute;

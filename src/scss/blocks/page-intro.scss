@@ -4,4 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 12rem;
+
+  @include mq(md) {
+    height: 36rem;
+    margin-bottom: 6rem;
+  }
 }

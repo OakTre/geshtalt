@@ -8,10 +8,28 @@
     margin-bottom: 7.2rem;
     padding-bottom: 6.8rem;
     border-bottom: 1px solid var(--color-black-alfa20);
+
+    @include mq(sm) {
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+    }
   }
 
   &__btn,
   .event__block:nth-child(2) {
     border-color: var(--color-black-alfa20);
+  }
+
+  .event__legend {
+    color: var(--color-black);
+  }
+
+  .events__icon {
+    stroke: var(--color-black-alfa20);
+  }
+
+  @include mq(sm) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }

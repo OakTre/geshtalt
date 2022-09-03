@@ -7,6 +7,11 @@
   flex-direction: column;
   min-height: 37.5rem;
 
+  @include mq(sm) {
+    padding: 2rem;
+    min-height: 26.5rem;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -16,6 +21,10 @@
     font: var(--font-btn);
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    @include mq(sm) {
+      font: var(--font-text-t2-mobile2);
+    }
   }
 
   &__img {
@@ -23,6 +32,11 @@
     height: 18.8rem;
     object-fit: cover;
     border-radius: 50%;
+
+    @include mq(sm) {
+      width: 8.8rem;
+      height: 8.8rem;
+    }
   }
 
   &__link {
@@ -34,5 +48,9 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+
+    @include mq(sm) {
+      font: var(--font-h3-mobile);
+    }
   }
 }

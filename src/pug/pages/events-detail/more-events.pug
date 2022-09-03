@@ -14,8 +14,10 @@ section.more-events
               header.event__info
                 span.event__legend Интенсив
                 a.event__link(href="./events-detail.html") XIV Поволжский интенсив «Волжские встречи»
-                p.event__text
-                  | Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
+                .event__text-wrapper
+                  +icon-mono("arrow-bottom")(class="events__icon" width="24" heihgt="24")
+                  p.event__text
+                    | Интенсив — это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития
               .event__img-wrapper
                 img.lazyload(src="#" data-src="assets/images/event-block/img.jpg" alt="XIV Поволжский интенсив «Волжские встречи»" class="event__img")
     .events__grid-container
