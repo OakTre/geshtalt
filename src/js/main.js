@@ -10,6 +10,7 @@ import introAnimation from './modules/introAnimation';
 import hidePreloader from './modules/hidePreloader';
 import indexAboutAnimation from './modules/indexAboutAnimation';
 import parralaxEffect from './modules/parralaxEffect';
+import menu from './modules/menu';
 
 window.addEventListener("load", () => {
   hidePreloader();
@@ -27,4 +28,5 @@ documenReady(() => {
   blocksReveal();
   indexAboutAnimation();
   parralaxEffect();
+  menu();
 });

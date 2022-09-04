@@ -1,0 +1,113 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  overflow: auto;
+  padding-bottom: 3rem;
+  background-image: url(../images/bg-img-menu.svg);
+  background-repeat: no-repeat;
+  background-size: 18.1rem 5.8rem;
+  background-position: top left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease-in, visibility 0.1s ease-in;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 2.2rem;
+      height: 0.1rem;
+      background-color: var(--color-black-alfa40);
+
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+
+  }
+
+  &__container {
+    padding-top: 9.6rem;
+  }
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--color-black-alfa20);
+  }
+
+  &__legend-link {
+    font: var(--font-h2-mobile);
+  }
+
+  &__nav {
+    ul {
+      li {
+        margin-bottom: 1.2rem;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid var(--color-black-alfa20);
+
+        a {
+          font: var(--font-text-t1-mobile);
+        }
+      }
+    }
+  }
+
+  &__socials {
+    margin-top: 2.7rem;
+    margin-bottom: 4.1rem;
+
+    .socials__item {
+      margin-right: 0.8rem;
+    }
+
+    .socials__link {
+      width: 5.2rem;
+      height: 5.2rem;
+
+      .icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  &__tel {
+    font: var(--font-text-t1-mobile);
+    margin-bottom: 2.4rem;
+  }
+
+  &__tel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

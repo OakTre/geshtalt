@@ -1,0 +1,21 @@
+.menu
+  .site-container.menu__container
+    button.menu__close(aria-label="Закрыть меню")
+      span
+      span
+    ul.menu__list
+      li.menu__item
+        a.menu__legend-link(href="/") Образование
+    .menu__nav
+      ul
+        li #[a(href="/") Список литературы]
+    ul.socials.menu__socials
+      li.socials__item
+        a.socials__link(href="/")
+          +icon-mono("wt")(width="24" height="24" class="socials__icon")
+      li.socials__item
+        a.socials__link(href="/")
+          +icon-mono("tg")(width="24" height="24" class="socials__icon")
+    .menu__tel-wrapper
+      a.menu__tel(href="/") +7 (917) 290–08–80
+      +button(class="menu__btn") оставить заявку

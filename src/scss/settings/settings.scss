@@ -338,5 +338,10 @@ button:focus {
   img {
     width: 10rem;
     height: 10rem;
+
+    @include mq(sm) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 }

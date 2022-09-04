@@ -92,9 +92,14 @@
   }
 
   &__mobile-btn {
+    display: none;
     position: absolute;
     right: 0;
     bottom: -1rem;
+
+    @include mq(md) {
+      display: block;
+    }
   }
 
   &__link {
