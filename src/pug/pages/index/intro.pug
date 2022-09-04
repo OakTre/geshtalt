@@ -4,9 +4,12 @@ section.intro(style={'background-image': 'url(assets/images/intro-img.jpg)'})
       .intro__heading-block
         img.intro__logo(src="assets/images/logo-white.svg" alt="Логотип компании")
       .intro__heading-block
-        h1.intro__heading Передовая организация, объединяющая профессионалов
+        h1.visually-hidden Передовая организация, объединяющая профессионалов
+        .intro__heading Передовая организация, объединяющая профессионалов
         .intro__heading-text
-          img(src="assets/images/logo-france.svg" alt="")
+          .intro__company-logo
+            img(src="assets/images/geshtalt-logo-wrapper.svg" alt="" class="intro__company-logo-wrapper")
+            img(src="assets/images/geshtalt-logo.svg" alt="" class="intro__company-logo-inner")
           p
             | В 2019 институт заключил договор об аффилиации с Французским институтом гештальт-терапии.
     .grid-container.intro__bottom

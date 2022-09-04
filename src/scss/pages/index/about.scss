@@ -12,6 +12,7 @@
     margin-bottom: 8.3rem;
   }
 
+
   &__bg-top {
     position: absolute;
     top: 0;
@@ -135,6 +136,8 @@
     display: none;
     justify-content: flex-end;
     margin-bottom: 4rem;
+    max-width: 70%;
+    margin-left: auto;
 
     @include mq(md) {
       display: flex;
@@ -142,6 +145,49 @@
   }
 
   &__mobile-text {
-    max-width: 70%;
+    position: relative;
+  }
+
+  &__mobile-logo {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 7%;
+    width: 12rem;
+    height: 12rem;
+    margin-right: 2.4rem;
+    flex-shrink: 0;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__mobile-logo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotate 20s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__mobile-logo-inner {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    width: 4.5rem;
+    height: 4.3rem;
+    transform: translate(-50%, -50%);
   }
 }
