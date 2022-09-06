@@ -1,7 +1,53 @@
-.modal__container(data-target="modal")
+.modal__container(data-target="event")
   .modal__content
     button.button-reset.modal__close-btn.modal-close(type="button")
       span
       span
-    .modal__legend
-      | Поздравляем вы открыли модалку!
+    .modal__content-inner
+      .modal__content-inner-block
+        .modal__legend Записаться на мероприятие
+        p.modal__legend-text Перед началом обучения необходимо пройти собеседование!
+      .modal__content-inner-block
+        form.modal-form(data-need-validation)
+          label.modal-form__label
+            input(type="text" name="name" data-parsley-required class="modal-form__input" placeholder="Имя")
+
+          label.modal-form__label
+            input(type="text" name="tel" data-parsley-required class="modal-form__input js-phone-mask" placeholder="Телефон")
+
+          label.modal-form__label
+            input(type="email" name="email" data-parsley-required class="modal-form__input" placeholder="Почта")
+
+          +button()(class="mod-white modal-form__btn")
+            | хочу Учиться
+
+          p.modal-form__agree
+            | Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование политики конфиденциальности
+
+
+
+.modal__container(data-target="program")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__content-inner
+      .modal__content-inner-block
+        .modal__legend Записаться на обучение
+        p.modal__legend-text Перед началом обучения необходимо пройти собеседование!
+      .modal__content-inner-block
+        form.modal-form(data-need-validation)
+          label.modal-form__label
+            input(type="text" name="name" data-parsley-required class="modal-form__input" placeholder="Имя")
+
+          label.modal-form__label
+            input(type="text" name="tel" data-parsley-required class="modal-form__input js-phone-mask" placeholder="Телефон")
+
+          label.modal-form__label
+            input(type="email" name="email" data-parsley-required class="modal-form__input" placeholder="Почта")
+
+          +button()(class="mod-white modal-form__btn")
+            | хочу Учиться
+
+          p.modal-form__agree
+            | Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование политики конфиденциальности

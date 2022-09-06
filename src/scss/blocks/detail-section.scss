@@ -139,6 +139,16 @@
 
   &__section-name {
     color: var(--color-black);
+    display: inline-block;
+  }
+
+  &__section-name-arrow {
+    display: block;
+    margin-top: 1.2rem;
+
+    @include mq(sm) {
+      margin-top: 0.8rem;
+    }
   }
 
   &__heading {

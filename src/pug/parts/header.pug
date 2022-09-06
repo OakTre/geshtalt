@@ -35,7 +35,7 @@ header.header(class={'is-hidden header--white': name === "main"} class={'header-
         ul
           for item in nav
             li #[a(href=item.link)= item.name]
-      +button(class="header__btn") Учиться
+      +button(class="header__btn" data-path="modal") Учиться
       button.header__burger-btn(aria-label="Бергерное меню")
         span
         span

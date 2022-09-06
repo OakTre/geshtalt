@@ -3,7 +3,9 @@ section.detail-section
   .site-container
     .detail-section__grid-container
       .detail-section__block
-        span.detail-section__section-name.section-name Мероприятия
+        a.detail-section__section-name.section-name(href="/")
+          | Мероприятия
+          +icon-mono("arrow-long")(width="45" height="8" class="detail-section__section-name-arrow")
       .detail-section__block
         h1.detail-section__heading XIV Поволжский интенсив «Волжские встречи»
         .detail-section__info

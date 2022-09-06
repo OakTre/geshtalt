@@ -9,7 +9,7 @@
   height: var(--header-height);
 
   @include mq(sm) {
-    padding-top: 1.6rem;
+    padding-top: 2.6rem;
   }
 
   &.is-hidden {
@@ -44,7 +44,7 @@
     flex-shrink: 0;
 
     @include mq(sm) {
-      max-width: 14.6rem;
+      max-width: 22.6rem;
     }
   }
 

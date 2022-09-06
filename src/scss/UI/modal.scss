@@ -23,20 +23,33 @@
     display: none;
     height: auto;
     width: 100%;
-    max-width: 50rem;
-    background-color: var(--color-white);
+    max-width: 103.4rem;
+    background-color: var(--color-primary-light-blue);
     transform: translate(-50%, -50%);
-    border-radius: 1.6rem;
+    border-radius: 1.2rem;
     box-shadow: 0 0 1rem rgba($color: #000, $alpha: 0.1);
 
     &.modal-open {
       display: block;
     }
+
+    @include mq(md) {
+      max-width: 90%;
+    }
   }
 
   &__content {
     position: relative;
-    padding: 3.4rem 4rem;
+    padding: 6rem;
+
+    background-image: url(../images/modal-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 46.7rem 32.5rem;
+    background-position: bottom left;
+
+    @include mq(sm) {
+      padding: 3rem;
+    }
   }
 
   &__close-btn {
@@ -71,7 +84,7 @@
       transform: translate(-50%, -50%);
       width: 1.3rem;
       height: 0.1rem;
-      background-color: black;
+      background-color: var(--color-white);
       display: block;
       transition: background-color var(--transition);
 
@@ -85,7 +98,124 @@
     }
   }
 
+  &__content-inner {
+    display: flex;
+    color: var(--color-white);
+
+    ::selection {
+      background-color: var(--color-primary-blue);
+    }
+
+    @include mq(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__content-inner-block {
+    width: 50%;
+
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
+
   &__legend {
+    font: var(--font-h2);
+    letter-spacing: -0.06em;
+    margin-bottom: 3rem;
+
+    @include mq(sm) {
+      font: var(--font-h2-mobile);
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__legend-text {
+    font: var(--font-text-t2);
+    max-width: 26.6rem;
+
+    @include mq(sm) {
+      font: var(--font-text-t2-mobile);
+    }
+  }
+}
+
+
+.modal-form {
+  width: 100%;
+  padding-top: 7rem;
+
+  @include mq(sm) {
+    padding-top: 4rem;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 2.4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--color-white);
+
+    .parsley-errors-list {
+      position: absolute;
+      left: 0.4rem;
+      bottom: 0;
+      font: var(--font-text-t2);
+
+      @include mq(sm) {
+        font: var(--font-text-t2-mobile);
+      }
+    }
+
+    @include mq(sm) {
+      padding-bottom: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 2.2rem;
+    color: var(--color-white);
+    font: var(--font-text-t1);
+    letter-spacing: -0.02em;
+
+    @include placeholder() {
+      font: var(--font-text-t1);
+      letter-spacing: -0.02em;
+      color: var(--color-white);
+    }
+
+    @include mq(sm) {
+      font: var(--font-text-t1-mobile);
+
+      @include placeholder() {
+        font: var(--font-text-t1-mobile);
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--color-white);
+    border-radius: 9rem;
+    color: var(--color-primary-blue);
+    margin-bottom: 2rem;
+
+    @include mq(sm) {
+      padding: 2rem;
+    }
+  }
+
+  &__agree {
     text-align: center;
+    font: var(--font-text-t2);
+    color: rgba($color: #fff, $alpha: 0.4);
+
+    @include mq(sm) {
+      font: var(--font-text-t2-mobile);
+    }
   }
 }

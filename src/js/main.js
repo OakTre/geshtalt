@@ -11,6 +11,8 @@ import hidePreloader from './modules/hidePreloader';
 import indexAboutAnimation from './modules/indexAboutAnimation';
 import parralaxEffect from './modules/parralaxEffect';
 import menu from './modules/menu';
+import validation from './modules/validation';
+import phoneMask from './modules/inputmask';
 
 window.addEventListener("load", () => {
   hidePreloader();
@@ -29,4 +31,6 @@ documenReady(() => {
   indexAboutAnimation();
   parralaxEffect();
   menu();
+  validation();
+  phoneMask();
 });
