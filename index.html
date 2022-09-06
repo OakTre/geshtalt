@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
+    <div class="preloader">
+      <img src="assets/images/logo-small.svg" alt="">
+    </div>
     <div class="page-wrapper">
 
       <header class="header is-hidden header--white">
@@ -48,12 +51,50 @@
                 </li>
               </ul>
             </nav>
-            <button class="button header__btn">Учиться</button>
+            <button class="button header__btn" data-path="modal">Учиться</button>
             <button class="header__burger-btn" aria-label="Бергерное меню"><span></span><span></span><span></span>
             </button>
           </div>
         </div>
       </header>
+      <div class="menu js-menu">
+        <div class="site-container menu__container">
+          <button class="menu__close" aria-label="Закрыть меню"><span></span><span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__legend-link" href="/">Образование</a>
+            </li>
+          </ul>
+          <div class="menu__nav">
+            <ul>
+              <li>
+                <a href="/">Список литературы</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="socials menu__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="/">
+                <svg class="icon icon-wt socials__icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#wt"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="/">
+                <svg class="icon icon-tg socials__icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="menu__tel-wrapper">
+            <a class="menu__tel" href="/">+7 (917) 290–08–80</a>
+            <button class="button menu__btn">оставить заявку</button>
+          </div>
+        </div>
+      </div>
 
       <main class="page-main main">
         <section class="intro" style="background-image:url(assets/images/intro-img.jpg);">
@@ -63,9 +104,13 @@
                 <img class="intro__logo" src="assets/images/logo-white.svg" alt="Логотип компании">
               </div>
               <div class="intro__heading-block">
-                <h1 class="intro__heading">Передовая организация, объединяющая профессионалов</h1>
+                <h1 class="visually-hidden">Передовая организация, объединяющая профессионалов</h1>
+                <div class="intro__heading">Передовая организация, объединяющая профессионалов</div>
                 <div class="intro__heading-text">
-                  <img src="assets/images/logo-france.svg" alt="">
+                  <div class="intro__company-logo">
+                    <img class="intro__company-logo-wrapper" src="assets/images/geshtalt-logo-wrapper.svg" alt="">
+                    <img class="intro__company-logo-inner" src="assets/images/geshtalt-logo.svg" alt="">
+                  </div>
                   <p>В 2019 институт заключил договор об аффилиации с Французским институтом гештальт-терапии.</p>
                 </div>
               </div>
@@ -124,7 +169,7 @@
                         <div class="intro__news-heading">XIV Поволжский интенсив «Волжские встречи»</div>
                         <p class="intro__news-text">Интенсив – это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
                         <div class="intro__news-btns">
-                          <button class="button intro__news-btn mod-white">ЗАписаться</button>
+                          <button class="button intro__news-btn mod-white" data-path="event">ЗАписаться</button>
                           <button class="button intro__news-btn mod-transparent">Подробнее</button>
                         </div>
                       </div>
@@ -136,7 +181,7 @@
                         <div class="intro__news-heading">XIV Поволжский интенсив «Волжские встречи»</div>
                         <p class="intro__news-text">Интенсив – это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
                         <div class="intro__news-btns">
-                          <button class="button intro__news-btn mod-white">ЗАписаться</button>
+                          <button class="button intro__news-btn mod-white" data-path="event">ЗАписаться</button>
                           <button class="button intro__news-btn mod-transparent">Подробнее</button>
                         </div>
                       </div>
@@ -148,7 +193,7 @@
                         <div class="intro__news-heading">XIV Поволжский интенсив «Волжские встречи»</div>
                         <p class="intro__news-text">Интенсив – это возможность погрузиться в атмосферу личностного и профессионального исследования себя и получить опыт саморазвития</p>
                         <div class="intro__news-btns">
-                          <button class="button intro__news-btn mod-white">ЗАписаться</button>
+                          <button class="button intro__news-btn mod-white" data-path="event">ЗАписаться</button>
                           <button class="button intro__news-btn mod-transparent">Подробнее</button>
                         </div>
                       </div>
@@ -169,6 +214,10 @@
               <div class="about__block">
                 <h2 class="visually-hidden">О нас</h2>
                 <div class="about__mobile-text-wrapper">
+                  <div class="about__mobile-logo">
+                    <img class="about__mobile-logo-wrapper" src="assets/images/geshtalt-logo-wrapper-black.svg" alt="">
+                    <img class="about__mobile-logo-inner" src="assets/images/geshtalt-logo-black.svg" alt="">
+                  </div>
                   <p class="about__mobile-text">В 2019 институт заключил договор об аффилиации с Французским институтом гештальт-терапии.</p>
                 </div>
                 <div class="about__content-img-wrapper _mobile" style="background-image:url(assets/images/about-img.jpg);"></div>
@@ -188,7 +237,7 @@
         </section>
         <section class="catalog">
           <div class="site-container">
-            <h2 class="site-heading catalog__heading">Обучение гештальт-терапии</h2>
+            <h2 class="site-heading catalog__heading js-fade-in">Обучение гештальт-терапии</h2>
             <div class="catalog__container grid-container">
               <div class="catalog__block">
                 <a href="/">
@@ -201,7 +250,7 @@
               <div class="catalog__block">
                 <h3 class="catalog__legend"><span>Подготовительные курсы</span>
                 </h3>
-                <ul class="catalog__list">
+                <ul class="catalog__list js-fade-in" data-intersection-ratio="0.5">
                   <li class="catalog__item">
                     <div class="card"><span class="card__tag">caption</span>
                       <h3 class="card__heading">Курс 1</h3>
@@ -262,7 +311,7 @@
                 </ul>
                 <h3 class="catalog__legend"><span>Основные направления</span>
                 </h3>
-                <ul class="catalog__list">
+                <ul class="catalog__list js-fade-in" data-intersection-ratio="0.5">
                   <li class="catalog__item">
                     <div class="card"><span class="card__tag">1 уровень</span>
                       <h3 class="card__heading">Основы гештальт-терапии</h3>
@@ -323,7 +372,7 @@
                 </ul>
                 <h3 class="catalog__legend"><span>Специализации</span>
                 </h3>
-                <ul class="catalog__list">
+                <ul class="catalog__list js-fade-in" data-intersection-ratio="0.1">
                   <li class="catalog__item">
                     <div class="card"><span class="card__tag">01</span>
                       <h3 class="card__heading">Программа подготовки супервизоров</h3>
@@ -408,7 +457,7 @@
         <section class="events">
           <img class="events__bg-img" src="assets/images/events/bg.svg" alt="">
           <div class="site-container events__container">
-            <div class="events__heading-wrapper">
+            <div class="events__heading-wrapper js-fade-in">
               <h2 class="site-heading events__heaing">Мероприя<br>тия</h2>
               <div class="events__heading-info">
                 <a href="/">
@@ -503,7 +552,7 @@
           </div>
         </section>
         <section class="news js-parent-page-slider" data-slides-number="3">
-          <div class="site-container news__container">
+          <div class="site-container news__container js-fade-in" data-intersection-ratio="0.1">
             <h2 class="site-second-heading news__heading">Пресс-центр</h2>
             <div class="grid-container news__container">
               <div class="news__block">
@@ -570,7 +619,7 @@
             </div>
           </div>
         </section>
-        <section class="contact-us lazyload" data-bg="assets/images/contact.jpg">
+        <section class="contact-us lazyload parallax" data-bg="assets/images/contact.jpg">
           <div class="site-container contact-us__container">
             <div class="contact-us__content">
               <div class="contact-us__content-text">
@@ -650,11 +699,58 @@
       </footer>
     </div>
     <div class="modal">
-      <div class="modal__container" data-target="modal">
+      <div class="modal__container" data-target="event">
         <div class="modal__content">
           <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
           </button>
-          <div class="modal__legend">Поздравляем вы открыли модалку!</div>
+          <div class="modal__content-inner">
+            <div class="modal__content-inner-block">
+              <div class="modal__legend">Записаться на мероприятие</div>
+              <p class="modal__legend-text">Перед началом обучения необходимо пройти собеседование!</p>
+            </div>
+            <div class="modal__content-inner-block">
+              <form class="modal-form" data-need-validation>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="text" name="name" data-parsley-required placeholder="Имя">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input js-phone-mask" type="text" name="tel" data-parsley-required placeholder="Телефон">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="email" name="email" data-parsley-required placeholder="Почта">
+                </label>
+                <button class="button mod-white modal-form__btn">хочу Учиться</button>
+                <p class="modal-form__agree">Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование политики конфиденциальности</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="program">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__content-inner">
+            <div class="modal__content-inner-block">
+              <div class="modal__legend">Записаться на обучение</div>
+              <p class="modal__legend-text">Перед началом обучения необходимо пройти собеседование!</p>
+            </div>
+            <div class="modal__content-inner-block">
+              <form class="modal-form" data-need-validation>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="text" name="name" data-parsley-required placeholder="Имя">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input js-phone-mask" type="text" name="tel" data-parsley-required placeholder="Телефон">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="email" name="email" data-parsley-required placeholder="Почта">
+                </label>
+                <button class="button mod-white modal-form__btn">хочу Учиться</button>
+                <p class="modal-form__agree">Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование политики конфиденциальности</p>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

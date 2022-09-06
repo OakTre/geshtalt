@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
+    <div class="preloader">
+      <img src="assets/images/logo-small.svg" alt="">
+    </div>
     <div class="page-wrapper">
 
       <header class="header">
@@ -48,12 +51,50 @@
                 </li>
               </ul>
             </nav>
-            <button class="button header__btn">Учиться</button>
+            <button class="button header__btn" data-path="modal">Учиться</button>
             <button class="header__burger-btn" aria-label="Бергерное меню"><span></span><span></span><span></span>
             </button>
           </div>
         </div>
       </header>
+      <div class="menu js-menu">
+        <div class="site-container menu__container">
+          <button class="menu__close" aria-label="Закрыть меню"><span></span><span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__legend-link" href="/">Образование</a>
+            </li>
+          </ul>
+          <div class="menu__nav">
+            <ul>
+              <li>
+                <a href="/">Список литературы</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="socials menu__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="/">
+                <svg class="icon icon-wt socials__icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#wt"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="/">
+                <svg class="icon icon-tg socials__icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="menu__tel-wrapper">
+            <a class="menu__tel" href="/">+7 (917) 290–08–80</a>
+            <button class="button menu__btn">оставить заявку</button>
+          </div>
+        </div>
+      </div>
 
       <main class="page-main main">
         <section class="page-intro" style="background-image:url(assets/images/page-intro/img1.jpg);"></section>
@@ -260,7 +301,7 @@
         <section class="events">
           <img class="events__bg-img" src="assets/images/events/bg.svg" alt="">
           <div class="site-container events__container">
-            <div class="events__heading-wrapper">
+            <div class="events__heading-wrapper js-fade-in">
               <h2 class="site-heading events__heaing">Мероприя<br>тия</h2>
               <div class="events__heading-info">
                 <a href="/">
@@ -354,7 +395,7 @@
             </div>
           </div>
         </section>
-        <section class="contact-us lazyload" data-bg="assets/images/contact.jpg">
+        <section class="contact-us lazyload parallax" data-bg="assets/images/contact.jpg">
           <div class="site-container contact-us__container">
             <div class="contact-us__content">
               <div class="contact-us__content-text">
@@ -434,11 +475,58 @@
       </footer>
     </div>
     <div class="modal">
-      <div class="modal__container" data-target="modal">
+      <div class="modal__container" data-target="event">
         <div class="modal__content">
           <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
           </button>
-          <div class="modal__legend">Поздравляем вы открыли модалку!</div>
+          <div class="modal__content-inner">
+            <div class="modal__content-inner-block">
+              <div class="modal__legend">Записаться на мероприятие</div>
+              <p class="modal__legend-text">Перед началом обучения необходимо пройти собеседование!</p>
+            </div>
+            <div class="modal__content-inner-block">
+              <form class="modal-form" data-need-validation>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="text" name="name" data-parsley-required placeholder="Имя">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input js-phone-mask" type="text" name="tel" data-parsley-required placeholder="Телефон">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="email" name="email" data-parsley-required placeholder="Почта">
+                </label>
+                <button class="button mod-white modal-form__btn">хочу Учиться</button>
+                <p class="modal-form__agree">Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование политики конфиденциальности</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="program">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__content-inner">
+            <div class="modal__content-inner-block">
+              <div class="modal__legend">Записаться на обучение</div>
+              <p class="modal__legend-text">Перед началом обучения необходимо пройти собеседование!</p>
+            </div>
+            <div class="modal__content-inner-block">
+              <form class="modal-form" data-need-validation>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="text" name="name" data-parsley-required placeholder="Имя">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input js-phone-mask" type="text" name="tel" data-parsley-required placeholder="Телефон">
+                </label>
+                <label class="modal-form__label">
+                  <input class="modal-form__input" type="email" name="email" data-parsley-required placeholder="Почта">
+                </label>
+                <button class="button mod-white modal-form__btn">хочу Учиться</button>
+                <p class="modal-form__agree">Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование политики конфиденциальности</p>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
