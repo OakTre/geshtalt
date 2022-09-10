@@ -189,6 +189,7 @@
 
     @include mq(sm) {
       font: var(--font-text-t1-mobile);
+      height: 3rem;
 
       @include placeholder() {
         font: var(--font-text-t1-mobile);
