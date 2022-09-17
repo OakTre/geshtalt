@@ -3,12 +3,15 @@
 ## Ссылки
 
 1. [Главная](https://oaktre.github.io/geshtalt/)
-2. [Образование](https://oaktre.github.io/geshtalt/education.html)
-3. [Мероприятия](https://oaktre.github.io/geshtalt/events.html)
-4. [Мероприятия - детальная](https://oaktre.github.io/geshtalt/events-detail.html)
-5. [Новости](https://oaktre.github.io/geshtalt/news.html)
-6. [Новости - детальная](https://oaktre.github.io/geshtalt/news-detail.html)
-6. [Контакты](https://oaktre.github.io/geshtalt/contacts.html)
+1. [Образование](https://oaktre.github.io/geshtalt/education.html)
+1. [Образование - детальная](https://oaktre.github.io/geshtalt/education-detail.html)
+1. [Преподаватели](https://oaktre.github.io/geshtalt/teachers.html)
+1. [Преподаватели - детальная](https://oaktre.github.io/geshtalt/teachers-detail.html)
+1. [Мероприятия](https://oaktre.github.io/geshtalt/events.html)
+1. [Мероприятия - детальная](https://oaktre.github.io/geshtalt/events-detail.html)
+1. [Новости](https://oaktre.github.io/geshtalt/news.html)
+1. [Новости - детальная](https://oaktre.github.io/geshtalt/news-detail.html)
+1. [Контакты](https://oaktre.github.io/geshtalt/contacts.html)
 
 
 
