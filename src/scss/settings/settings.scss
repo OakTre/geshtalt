@@ -227,11 +227,27 @@ select:-webkit-autofill:focus {
 }
 
 .js-focus-visible button:focus:not(.focus-visible) {
-  box-shadow: none;
+  outline: none;
 }
 
 button:focus {
-  box-shadow: 0 0 0 10px red;
+  outline: none;
+}
+
+.js-focus-visible a:focus:not(.focus-visible) {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a.focus-visible:focus {
+  outline: 1px solid var(--color-primary-light-blue);
+}
+
+button.focus-visible:focus {
+  outline: 2px solid var(--color-primary-light-blue);
 }
 
 .grid-container {
