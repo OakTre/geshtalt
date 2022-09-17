@@ -1,0 +1,11 @@
+.catalog {
+  &__heading {
+    br {
+      display: none;
+
+      @include mq(sm) {
+        display: block;
+      }
+    }
+  }
+}

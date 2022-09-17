@@ -1,0 +1,50 @@
+.form {
+  &__inner {
+    padding: 9rem 8rem;
+    background-color: var(--color-primary-light-blue);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-offset);
+    color: var(--color-white);
+    background-image: url(../images/form-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100.8rem 23.6rem;
+    margin-top: 12rem;
+
+    ::selection {
+      background-color: var(--color-primary-blue);
+    }
+
+    .modal-form {
+      padding-top: 0;
+      max-width: 64.1rem;
+
+      .modal-form__agree {
+        text-align: left;
+        max-width: 50.6rem;
+      }
+    }
+  }
+
+  &__block {
+    &:nth-child(1) {
+      grid-column: 5 span;
+    }
+
+    &:nth-child(2) {
+      grid-column: 7 span;
+    }
+  }
+
+  &__legend {
+    font: var(--font-h1);
+  }
+
+  &__legend-text {
+    max-width: 30.7rem;
+    margin-bottom: 14.3rem;
+    padding-top: 3rem;
+  }
+}

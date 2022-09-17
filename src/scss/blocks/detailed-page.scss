@@ -1,0 +1,244 @@
+.detailed-page-intro {
+  background-color: var(--color-grey-300);
+  padding-bottom: 14.4rem;
+  background-image: url(../images/teacher-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 98.2rem 30.3rem;
+  background-position: bottom left;
+  margin-bottom: 12rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--grid-offset);
+
+    ._block {
+      &:nth-child(1) {
+        grid-column: 4 span;
+      }
+
+      &:nth-child(2) {
+        grid-column: 1 span;
+      }
+
+      &:nth-child(3) {
+        grid-column: 7 span;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.2rem;
+  }
+
+  &__tag {
+    margin-bottom: 7.4rem;
+    color: var(--color-black);
+  }
+
+  &__heading {
+    font: var(--font-h1);
+    margin-bottom: 6rem;
+    letter-spacing: -0.06em;
+  }
+
+  &__content {
+    max-width: 76.7rem;
+
+    p {
+      font: var(--font-h4);
+      margin-bottom: 2rem;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+    }
+
+    h3 {
+      font: var(--font-h2);
+      margin: 3rem 0 5.2rem;
+    }
+
+    ul {
+      margin: 3rem 0;
+
+      li {
+        position: relative;
+        padding-left: 4rem;
+        font: var(--font-h4);
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          position: absolute;
+          top: 1.3rem;
+          left: 0.4rem;
+          width: 0.7rem;
+          height: 0.7rem;
+          background-color: var(--color-black);
+          border-radius: 50%;
+          content: "";
+        }
+      }
+    }
+  }
+
+  &--education {
+    background-image: none;
+    padding-bottom: 6.4rem;
+
+    .detailed-page-intro__image {
+      border-radius: 25.3rem;
+    }
+  }
+}
+
+
+.detailed-page {
+  position: relative;
+  margin-bottom: 12rem;
+
+  &__heading {
+    padding-bottom: 6.8rem;
+    margin-bottom: 10rem;
+    border-bottom: 1px solid var(--color-black-alfa20);
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--grid-offset);
+
+    ._block {
+      &:nth-child(1) {
+        grid-column: 3 span;
+      }
+
+      &:nth-child(2) {
+        grid-column: 9 span;
+      }
+
+      @include mq(md) {
+        grid-column: 12 span !important;
+      }
+    }
+  }
+
+  &__list {
+    ul {
+      counter-reset: section;
+
+      li {
+        padding-bottom: 5.6rem;
+        margin-bottom: 5.2rem;
+        border-bottom: 1px solid var(--color-black-alfa20);
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-gap: var(--grid-offset);
+        font: var(--font-h3);
+        letter-spacing: -0.04em;
+
+        strong {
+          grid-column: 6 span;
+        }
+
+        &::before {
+          grid-column: 3 span;
+          counter-increment: section;
+          content: "0"counter(section);
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__shiled {
+    background-color: var(--color-white);
+    padding: 5.2rem 8rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--color-black);
+    margin-bottom: 2rem;
+  }
+
+  &__shiled-text {
+    max-width: 77rem;
+    font: var(--font-h2);
+
+    span {
+      color: var(--color-secondary-blue);
+    }
+  }
+
+  &__cards-list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 2rem;
+  }
+
+  &__cards-item {
+    grid-column: 3 span;
+  }
+
+  &--blue {
+    background-color: var(--color-primary-light-blue);
+    padding: 12rem 0 16rem;
+    color: var(--color-white);
+
+    .detailed-page__heading {
+      border-color: var(--color-white-alfa20);
+    }
+
+    .detailed-page__list {
+      ul {
+        li {
+          border-color: var(--color-white-alfa20);
+
+          &:nth-child(1) {
+            padding-top: 6rem;
+            border-top: 1px solid var(--color-white-alfa20);
+          }
+        }
+      }
+    }
+  }
+
+  &--education {
+    .detailed-page__list {
+      margin-bottom: 18rem;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+
+      ul {
+        li {
+          &::before {
+            grid-column: 2 span;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          strong {
+            grid-column: 7 span;
+          }
+        }
+      }
+    }
+  }
+}

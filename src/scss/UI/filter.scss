@@ -8,6 +8,13 @@
   @include mq(sm) {
     padding-top: 1.8rem;
     margin-bottom: 4rem;
+
+    overflow-y: auto;
+    overflow-y: hidden;
+    padding-right: var(--content-padding);
+    margin-right: calc(var(--content-padding) * -1);
+
+    @include noScrollbar();
   }
 
   &__item {
@@ -15,6 +22,10 @@
     display: block;
     margin-right: 3.6rem;
     cursor: pointer;
+
+    @include mq(sm) {
+      flex-shrink: 0;
+    }
 
     &:last-child {
       margin-right: 0;

@@ -58,17 +58,9 @@
 }
 
 
-@mixin gradienText {
-  background: var(--gradient-priamry2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  background-size: 240% 220%;
-  background-position: 180% 100%;
-  transition: background-position var(--transition);
-
-  &:hover {
-    background-position: 100% 100%;
-  }
+@mixin maxSizeText($size) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $size;
+  -webkit-box-orient: vertical;
 }

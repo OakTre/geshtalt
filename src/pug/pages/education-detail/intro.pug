@@ -1,0 +1,46 @@
+section.top-offset.detailed-page-intro.detailed-page-intro--education
+  .site-container
+    .detailed-page-intro__container
+      ._block
+        a.detailed-page-intro__tag.section-name(href="/") Образование
+        img.detailed-page-intro__image(src="assets/images/education/img.jpg" alt="")
+      ._block
+      ._block
+        h1.detailed-page-intro__heading Основы гештальт-терапии
+        .detailed-page-intro__tag.section-name Первый уровень
+        .detailed-page-intro__content
+          p
+            | «Основы гештальт-терапии» – инновационная специализированная
+            | программа обучения гештальт-терапии. Это экспериентальный уровень подготовки,
+            | он заключается в исследовании философской основы подхода через сенсорный «опыт» переживания.
+            | Теоретической основой исследования являются концепции Ф. Перлза, Л. Перлз, П. Гудмана,
+            | Г. Йонтефа, Ж.-М. Робина, Д. Блума, Р. Франк, М. Спаньоллы-Лобб и др.
+
+          h3 Для кого данная программа
+          ul
+            li психологов
+            li интересующихся психологией и психотерапией
+            li студентов
+            li для людей, интересующихся психологией и психотерапией, имеющих опыт индивидуальной или групповой терапии и прошедших «Подготовительный курс» подготовки гештальт-терапевтов.
+
+
+    .form__inner
+      .form__block
+        .form__legend Оставьте заявку
+      .form__block
+        p.form__legend-text Для регистрации в программе нужно пройти собеседование
+        form.modal-form(data-need-validation)
+          label.modal-form__label
+            input(type="text" name="name" data-parsley-required class="modal-form__input" placeholder="Имя")
+
+          label.modal-form__label
+            input(type="text" name="tel" data-parsley-required class="modal-form__input js-phone-mask" placeholder="Телефон")
+
+          label.modal-form__label
+            input(type="email" name="email" data-parsley-required class="modal-form__input" placeholder="Почта")
+
+          +button()(class="mod-white modal-form__btn")
+            | хочу Учиться
+
+          p.modal-form__agree
+            | Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование #[a(href="") политики конфиденциальности]

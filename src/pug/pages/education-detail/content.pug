@@ -1,0 +1,95 @@
+section.detailed-page.detailed-page--education
+  .site-container
+    h2.detailed-page__heading.site-second-heading Основные темы
+    .detailed-page__container
+      ._block
+      ._block
+        .detailed-page__list
+          ul
+            li #[strong Поле, контакт и ситуация в ГТ. Темпоральность, эмерджентность, реляционность. ]
+            li #[strong Движение как основа процесса контактирования: эстетическое видение ситуации и соматический опыт. ]
+            li #[strong Гештальт-терапия как клиническая феноменология: «перестать знать» ]
+
+section.detailed-page.detailed-page--blue.detailed-page--education
+  .site-container
+    h2.detailed-page__heading.site-second-heading Чему вы научитесь
+    .detailed-page__container
+      ._block
+      ._block
+        .detailed-page__shiled
+          p.detailed-page__shiled-text
+            | В процессе прохождения экспериентального
+            | уровня обучающиеся #[span будут знать]
+          img(src="assets/images/bird.svg" alt="" class="detailed-page__img")
+        .detailed-page__list
+          ul
+            li #[strong Поле, контакт и ситуация в ГТ. Темпоральность, эмерджентность, реляционность. ]
+            li #[strong Движение как основа процесса контактирования: эстетическое видение ситуации и соматический опыт. ]
+            li #[strong Гештальт-терапия как клиническая феноменология: «перестать знать» ]
+        .detailed-page__shiled
+          p.detailed-page__shiled-text
+            | В процессе прохождения экспериентального
+            | уровня обучающиеся #[span будут знать]
+          img(src="assets/images/bird.svg" alt="" class="detailed-page__img")
+        .detailed-page__list
+          ul
+            li #[strong Поле, контакт и ситуация в ГТ. Темпоральность, эмерджентность, реляционность. ]
+            li #[strong Движение как основа процесса контактирования: эстетическое видение ситуации и соматический опыт. ]
+            li #[strong Гештальт-терапия как клиническая феноменология: «перестать знать» ]
+
+section.detailed-page.detailed-page--education
+  .site-container
+    h2.detailed-page__heading.site-second-heading Преподаватели
+    .detailed-page__container
+      ._block
+      ._block
+        ul.detailed-page__cards-list
+          each i in Array.from(Array(2).keys())
+            li.detailed-page__cards-item
+              article.teacher-card
+                .teacher-card__img-wrapper
+                  img(src="#" data-src="assets/images/teacher/img1.jpg" alt="" class="lazyload teacher-card__img")
+                h3.teacher-card__name
+                  a.teacher-card__link(href="./teachers-detail.html") Нона Аракелян
+                p.teacher-card__caption
+                  | К.псих.наук, клинический психолог, директор Поволжского института гештальт-терапии, член EAGT, AAGT
+
+
+section.detailed-page.detailed-page--education
+  img(src="assets/images/detail-bg.svg" class="detail-section__bg-img" alt="")
+  .site-container
+    h2.detailed-page__heading.site-second-heading Фотографии с программы
+    .detail-section__content-imgs.js-parent-page-slider(data-slides-number="1" data-slides-number-mobile="1")
+      ._block
+        .slider-nav.detail-section__slider-nav
+          button.slider-nav__btn.js-slider-btn-prev
+            +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
+          button.slider-nav__btn.js-slider-btn-next
+            +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
+      ._block
+        .detail-section__content-slider.swiper.js-page-slider
+          .swiper-wrapper
+            each i in Array.from(Array(3).keys())
+              .swiper-slide.detail-section__content-slide
+                img.lazyload(data-src="assets/images/slider/img1.jpg" src="#" alt="")
+
+    .form__inner
+      .form__block
+        .form__legend Оставьте заявку
+      .form__block
+        p.form__legend-text Для регистрации в программе нужно пройти собеседование
+        form.modal-form(data-need-validation)
+          label.modal-form__label
+            input(type="text" name="name" data-parsley-required class="modal-form__input" placeholder="Имя")
+
+          label.modal-form__label
+            input(type="text" name="tel" data-parsley-required class="modal-form__input js-phone-mask" placeholder="Телефон")
+
+          label.modal-form__label
+            input(type="email" name="email" data-parsley-required class="modal-form__input" placeholder="Почта")
+
+          +button()(class="mod-white modal-form__btn")
+            | хочу Учиться
+
+          p.modal-form__agree
+            | Нажимая кнопку “хочу учиться” вы подтверждаете согласие на использование #[a(href="") политики конфиденциальности]

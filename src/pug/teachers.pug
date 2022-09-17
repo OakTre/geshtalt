@@ -1,0 +1,10 @@
+extends layout/default.pug
+
+block variables
+  - const bodyClass = "page-home"
+  - const pageTitle = "Преподаватели"
+  - const siteLang = "ru"
+  - const name = "teachers"
+
+block content
+  include pages/teachers/main.pug

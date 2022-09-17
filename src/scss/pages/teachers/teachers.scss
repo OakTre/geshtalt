@@ -1,0 +1,120 @@
+.teachers {
+  &__filter {
+    margin-bottom: 7rem;
+  }
+
+  &__heading {
+    br {
+      display: none;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 6rem;
+
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+.teachers-list {
+  margin-bottom: 10rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 6rem 2rem;
+
+    @include mq(sm) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 4rem 0;
+    }
+  }
+
+  &__item {
+    grid-column: 3 span;
+
+    @include mq(md) {
+      grid-column: 4 span;
+    }
+
+    @include mq(sm) {
+      grid-column: 4 span;
+    }
+  }
+}
+
+.teacher-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__img-wrapper {
+    width: 100%;
+    height: 46rem;
+    background-color: var(--color-primary-light-blue);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-bottom: 2.4rem;
+
+    @include mq(sm) {
+      height: 36rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font: var(--font-h4);
+    margin-bottom: 1.6rem;
+
+    @include mq(sm) {
+      font: var(--font-h3-mobile);
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      display: inline-block;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        inset: 0;
+        content: "";
+      }
+    }
+  }
+
+  &__caption {
+    font: car(--font-text-t2);
+    color: rgba(47, 50, 65, 0.4);
+
+    @include maxSizeText(3);
+
+    @include mq(sm) {
+      font: var(--font-text-t2-mobile2);
+    }
+  }
+
+  &--max-width {
+    max-width: 37.5rem;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &:hover {
+    .teacher-card__name {
+      color: var(--color-primary-light-blue);
+    }
+  }
+}

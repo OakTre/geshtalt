@@ -1,0 +1,12 @@
+section.teachers-list
+  .site-container
+    ul.teachers-list__container
+      each i in Array.from(Array(8).keys())
+        li.teachers-list__item
+          article.teacher-card
+            .teacher-card__img-wrapper
+              img(src="#" data-src="assets/images/teacher/img1.jpg" alt="" class="lazyload teacher-card__img")
+            h3.teacher-card__name
+              a.teacher-card__link(href="./teachers-detail.html") Нона Аракелян
+            p.teacher-card__caption
+              | К.псих.наук, клинический психолог, директор Поволжского института гештальт-терапии, член EAGT, AAGT
