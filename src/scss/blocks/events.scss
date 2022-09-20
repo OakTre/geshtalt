@@ -154,6 +154,7 @@
 
     @include mq(sm) {
       display: none;
+      padding: 2.4rem 0;
     }
   }
 
@@ -209,6 +210,10 @@
       display: block;
       width: 100%;
       border-color: var(--color-black-alfa20);
+
+      @include mq(sm) {
+        margin-top: 4rem;
+      }
     }
 
     .events__icon {

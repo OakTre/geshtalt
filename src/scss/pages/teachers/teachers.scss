@@ -26,9 +26,9 @@
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 6rem 2rem;
 
-    @include mq(sm) {
+    @include mq(md) {
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 4rem 0;
+      grid-gap: 4rem 1.2rem;
     }
   }
 
@@ -36,11 +36,7 @@
     grid-column: 3 span;
 
     @include mq(md) {
-      grid-column: 4 span;
-    }
-
-    @include mq(sm) {
-      grid-column: 4 span;
+      grid-column: 2 span;
     }
   }
 }
@@ -60,8 +56,8 @@
     margin-bottom: 2.4rem;
 
     @include mq(sm) {
-      height: 36rem;
-      margin-bottom: 1.6rem;
+      height: 18.9rem;
+      margin-bottom: 1.2rem;
     }
   }
 
@@ -76,8 +72,8 @@
     margin-bottom: 1.6rem;
 
     @include mq(sm) {
-      font: var(--font-h3-mobile);
-      margin-bottom: 1.2rem;
+      font: var(--font-text-t1-mobile);
+      margin-bottom: 0.8rem;
     }
 
     a {
@@ -99,7 +95,7 @@
     @include maxSizeText(3);
 
     @include mq(sm) {
-      font: var(--font-text-t2-mobile2);
+      font: var(--font-text-t2-mobile);
     }
   }
 

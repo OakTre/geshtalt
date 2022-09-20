@@ -2,7 +2,9 @@ section.top-offset.detailed-page-intro.detailed-page-intro--education
   .site-container
     .detailed-page-intro__container
       ._block
-        a.detailed-page-intro__tag.section-name(href="/") Образование
+        a.detailed-page-intro__tag.section-name(href="/")
+          | Образование
+          +icon-mono("arrow-long")(width="45" height="8" class="detail-section__section-name-arrow")
         img.detailed-page-intro__image(src="assets/images/education/img.jpg" alt="")
       ._block
       ._block
@@ -12,10 +14,33 @@ section.top-offset.detailed-page-intro.detailed-page-intro--education
           p
             | «Основы гештальт-терапии» – инновационная специализированная
             | программа обучения гештальт-терапии. Это экспериентальный уровень подготовки,
-            | он заключается в исследовании философской основы подхода через сенсорный «опыт» переживания.
+            | он заключается в исследовании #[a(href="/") философской] основы подхода через сенсорный «опыт» переживания.
             | Теоретической основой исследования являются концепции Ф. Перлза, Л. Перлз, П. Гудмана,
             | Г. Йонтефа, Ж.-М. Робина, Д. Блума, Р. Франк, М. Спаньоллы-Лобб и др.
 
+        .detailed-page-intro__main-info
+          .detailed-page-intro__main-info-item
+            span.detailed-page-intro__main-info-legend Организация обучения
+            h4 7 трехдневок (6 трехдневок и зачет)
+            table
+              tr
+                td Пятница
+                td 17:00–21:00
+              tr
+                td Суббота
+                td 17:00–21:00
+              tr
+                td Воскресение
+                td 17:00–21:00
+          .detailed-page-intro__main-info-item
+            span.detailed-page-intro__main-info-legend Срок обучения
+            h4 14 месяцев
+
+          .detailed-page-intro__main-info-item
+            span.detailed-page-intro__main-info-legend Стоимость 1 занятия
+            h4 8 500 ₽
+
+        .detailed-page-intro__content
           h3 Для кого данная программа
           ul
             li психологов
