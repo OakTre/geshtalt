@@ -124,10 +124,6 @@
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 3.2rem;
-
-      p {
-        max-width: 70%;
-      }
     }
   }
 
@@ -139,6 +135,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    max-width: 70%;
 
     @include mq(sm) {
       font: var(--font-text-t2-mobile2);
