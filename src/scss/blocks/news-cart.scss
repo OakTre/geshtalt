@@ -47,6 +47,10 @@
     font: var(--font-h3);
     letter-spacing: -0.04em;
 
+    &:hover {
+      color: var(--color-primary-light-blue);
+    }
+
     @include mq(sm) {
       font: var(--font-h2-mobile);
     }

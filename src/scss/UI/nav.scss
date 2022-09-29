@@ -12,6 +12,10 @@
 
       a {
         font: var(--font-text-t2);
+
+        &:hover {
+          color: var(--color-primary-light-blue);
+        }
       }
     }
   }

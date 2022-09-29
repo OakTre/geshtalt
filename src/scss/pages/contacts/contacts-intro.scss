@@ -46,6 +46,10 @@
     font: var(--font-h2);
     margin-bottom: 7rem;
 
+    &:hover {
+      color: var(--color-primary-light-blue);
+    }
+
     @include mq(md) {
       font: var(--font-h3);
     }

@@ -70,6 +70,10 @@
       margin-right: 0;
     }
 
+    &:hover {
+      color: var(--color-primary-light-blue);
+    }
+
     @include mq(lg) {
       display: none;
     }
@@ -129,6 +133,12 @@
     .header__burger-btn {
       span {
         background-color: var(--color-white);
+      }
+    }
+
+    .nav ul li a {
+      &:hover {
+        color: var(--color-primary-light-blue);
       }
     }
   }

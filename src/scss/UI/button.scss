@@ -7,21 +7,40 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   display: inline-block;
+  transition: color 200ms, background-color 200ms, border-color 200ms;
+
+  &:hover {
+    background-color: #1e275b;
+  }
 
   &.mod-white {
     background-color: var(--color-white);
     color: var(--color-black);
+
+    &:hover {
+      background-color: #e3e3e3;
+    }
   }
 
   &.mod-transparent {
     background-color: transparent;
     color: var(--color-white);
     border: 1px solid var(--color-white-alfa20);
+
+    &:hover {
+      background-color: #fcfcfc;
+      color: var(--color-black);
+    }
   }
 
   &.mod-black {
     border-color: var(--color-black-alfa20);
     color: var(--color-black);
+
+    &:hover {
+      background-color: #ffffff;
+      color: var(--color-black);
+    }
   }
 
   @include mq(sm) {
