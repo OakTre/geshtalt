@@ -1,10 +1,25 @@
 -
   const footer_nav = [
-    'Об институте',
-    'Преподаватели',
-    'Список литературы',
-    'Пресс-центр',
-    'Контакты'
+    {
+      name: 'Об институте',
+      link: './about.html'
+    },
+    {
+      name: 'Преподаватели',
+      link: './teachers.html'
+    },
+    {
+      name: 'Список литературы',
+      link: './bibliography.html'
+    },
+    {
+      name: 'Пресс-центр',
+      link: './news.html'
+    },
+    {
+      name: 'Контакты',
+      link: './contacts.html'
+    }
   ]
 
 footer.footer
@@ -20,7 +35,7 @@ footer.footer
         nav.footer__nav
           ul
             for item in footer_nav
-              li #[a(href="/")= item]
+              li #[a(href=item.link)= item.name]
       .footer__block
         ul.socials.footer__socials
           li.socials__item

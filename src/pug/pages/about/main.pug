@@ -1,6 +1,120 @@
 main.page-main.main
   +page-intro("img2")
 
+  section.events.events--page.about-intro
+    img(src="assets/images/detail-bg.svg" class="detail-section__bg-img" alt="")
+    .site-container.events__container
+      .events__heading-wrapper
+        h2.site-heading.events__heaing Об институте
+        .events__heading-info
+          p
+            | Поволжский институт гештальт-терапии был создан в 2017
+            | году как результат более чем десятилетней предварительной
+            | профессиональной работы в области гештальт-терапии.
+
+      .detail-section__content-imgs.js-parent-page-slider(data-slides-number="1" data-slides-number-mobile="1")
+        ._block
+          .slider-nav.detail-section__slider-nav
+            button.slider-nav__btn.js-slider-btn-prev
+              +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
+            button.slider-nav__btn.js-slider-btn-next
+              +icon-mono("shevron-left")(width="7" height="14" class="slider-nav__icon")
+        ._block
+          .detail-section__content-slider.swiper.js-page-slider
+            .swiper-wrapper
+              each i in Array.from(Array(3).keys())
+                .swiper-slide.detail-section__content-slide
+                  img.lazyload(data-src="assets/images/slider/img1.jpg" src="#" alt="")
+  section.about-intro
+    .site-container
+      .detail-section__content-imgs
+        ._block
+        ._block
+          .about-intro__text-container
+            .about-intro__text-container-block
+              p
+                | Обучаясь сначала в российских, а затем и в международных
+                | программах по гештальт-терапии, мы пришли к пониманию
+                | необходимости реформирования самой обучающей программы,
+                | повышения качества подготовки выпускников, пересмотра принципов
+                | этической регуляции нашей деятельности с опорой на опыт ведущих
+                | международных организаций.
+
+              p
+                | Мы исходим из понимания, что психологическое здоровье –
+                | необычайно сложная и тонкая область человеческой жизни.
+                | Важно, чтобы специалист, занимающийся психическим здоровьем,
+                | был чутким, внимательным к сложным феноменам клиента, способным
+                | к пониманию и сопереживанию, обладал глубокими познаниями в данной
+                | области.
+            .about-intro__text-container-block
+              p
+                | В 2019 годы наш институт заключил аффилиативный контракт с Французским институтом гештальт-терапии (ifgt.fr).
+              p
+                | В 2009 году был создан центр терапии и исследования человеческих отношений “Ступени” (www.center-stupeni.ru),
+                | который стал теоретической и практической базой для формирования новой политики.
+
+  section.about-mission
+    .site-container
+      .about-mission__container
+        .about-mission__container-inner
+          ._block
+            img(src="assets/images/about/img-man.jpg" alt="")
+          ._block
+            .about-mission__content
+              span.about-mission__label Наша миссия
+              h2
+                | Это продвижение  качественной профессиональной подготовки в области гештальт-терапии.
+        .about-mission__container-inner
+          ._block
+          ._block
+            .about-mission__content
+              h3
+                | Чтобы двигаться к своей цели, мы:
+              ul
+                li
+                  strong
+                    | Сотрудничаем с ведущими международными организациями и находимся в самом центре развития современной гештальт-терапии;
+                li
+                  strong
+                    | Сотрудничаем с ведущими международными организациями и находимся в самом центре развития современной гештальт-терапии;
+                li
+                  strong
+                    | Сотрудничаем с ведущими международными организациями и находимся в самом центре развития современной гештальт-терапии;
+
+
+  section.about-advantages
+    .site-container
+      h2.detailed-page__heading.site-second-heading
+        | Наши преимущества
+      .about-advantages__container
+        ._block
+        ._block
+          ul.about-advantages__list
+            each i in Array.from(Array(4).keys())
+              li.about-advantages__item
+                img(src="assets/images/about/tick.svg" alt="Какой-то текст")
+                h3
+                  | Современные образовательные технологии
+                p
+                  | Современные образовательные технологии,
+                  | включающие самые передовые разработки в области гештальт-терапии;
+                  | качественная образовательная среда, построенная на принципах уважения,
+                  | стимулирующая интерес к открытию нового, рефлексивное отношение к себе
+                  | и глубокое понимание предмета изучения.
+
+  section.about-qoute
+    .site-container
+      .about-qoute__block
+        .about-qoute__part
+          img(src="assets/images/about/img.jpg" alt="Какой-то текст")
+        .about-qoute__part
+          .about-qoute__text
+            p
+              | Тренеры нашего центра  уделяют большое внимание развитию
+              | своего профессионального уровня, постоянно повышают квалификацию
+              | в международных программах, регулярно проходят аттестацию и супервизию.
+
   section.detailed-page
     .site-container
       h2.detailed-page__heading.site-second-heading Документы

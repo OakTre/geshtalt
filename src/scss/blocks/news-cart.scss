@@ -24,9 +24,9 @@
     object-fit: cover;
 
     @include mq(sm) {
-      width: 14rem;
-      height: 14rem;
-      border-radius: 50%;
+      width: 100%;
+      height: 23.2rem;
+      border-radius: 13rem;
     }
   }
 
@@ -48,7 +48,7 @@
     letter-spacing: -0.04em;
 
     @include mq(sm) {
-      font: var(--font-h3-mobile);
+      font: var(--font-h2-mobile);
     }
   }
 
@@ -97,9 +97,9 @@
       }
 
       @include mq(sm) {
-        width: 14rem;
-        height: 14rem;
-        border-radius: 50%;
+        width: 100%;
+        height: 23.2rem;
+        border-radius: 13rem;
       }
     }
 
@@ -115,12 +115,17 @@
       font: var(--font-h2);
 
       @include mq(md) {
-        font: var(--font-h3);
+        font: var(--font-h2-mobile);
       }
     }
 
     @include mq(lg) {
       padding: 4rem 3rem;
+    }
+
+    @include mq(sm) {
+      background-color: transparent;
+      padding: 0;
     }
   }
 }
