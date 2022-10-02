@@ -46,8 +46,7 @@
     transition: all 200ms;
 
     &:hover {
-      border-color: var(--color-primary-light-blue);
-      color: var(--color-primary-light-blue);
+      opacity: 0.6;
     }
 
     @include mq(sm) {
