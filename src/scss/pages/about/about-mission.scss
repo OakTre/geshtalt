@@ -121,10 +121,12 @@
       font: var(--font-h1);
       margin-bottom: 16rem;
       letter-spacing: -0.06em;
+      padding-right: 3.4rem;
 
       @include mq(md) {
         font: var(--font-h2);
         margin-bottom: 9rem;
+        padding-right: 0;
       }
 
       @include mq(sm) {

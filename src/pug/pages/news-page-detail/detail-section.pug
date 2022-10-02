@@ -2,7 +2,9 @@ section.detail-section.top-offset
   .site-container
     .detail-section__grid-container
       .detail-section__block
-        span.detail-section__section-name.section-name Пресс-центр
+        a.detail-section__section-name.section-name(href="/")
+          | Пресс-центр
+          +icon-mono("arrow-long")(width="45" height="8" class="detail-section__section-name-arrow")
       .detail-section__block
         h1.detail-section__heading «Как психолог помогает мне пережить происходящее вокруг?»
     .detail-section__content

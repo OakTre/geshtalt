@@ -3,9 +3,9 @@
     br {
       display: none;
 
-      @include mq(sm) {
-        display: block;
-      }
+      // @include mq(sm) {
+      //   display: block;
+      // }
     }
   }
 }

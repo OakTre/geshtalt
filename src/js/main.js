@@ -13,6 +13,7 @@ import parralaxEffect from './modules/parralaxEffect';
 import menu from './modules/menu';
 import validation from './modules/validation';
 import phoneMask from './modules/inputmask';
+import fixedHeader from './modules/fixedHeader';
 
 window.addEventListener("load", () => {
   hidePreloader();
@@ -33,4 +34,5 @@ documenReady(() => {
   menu();
   validation();
   phoneMask();
+  fixedHeader();
 });

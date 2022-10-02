@@ -43,6 +43,12 @@
     text-transform: uppercase;
     text-align: center;
     display: block;
+    transition: all 200ms;
+
+    &:hover {
+      border-color: var(--color-primary-light-blue);
+      color: var(--color-primary-light-blue);
+    }
 
     @include mq(sm) {
       display: none;

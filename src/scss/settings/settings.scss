@@ -283,7 +283,7 @@ button.focus-visible:focus {
   }
 
   @include mq(sm) {
-    font: var(--font-hero-mobile);
+    font: var(--font-h1-mobile);
   }
 }
 

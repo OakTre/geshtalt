@@ -64,3 +64,12 @@
     }
   }
 }
+
+
+.news-page-intro {
+  &__heading {
+    @include mq(sm) {
+      margin-bottom: 3rem;
+    }
+  }
+}

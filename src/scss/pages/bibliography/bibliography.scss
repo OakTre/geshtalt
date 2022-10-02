@@ -25,6 +25,11 @@
 
     .detailed-page__doc-list ul li a {
       align-items: flex-start;
+      width: 100%;
+    }
+
+    .detailed-page__doc-list ul li {
+      display: flex;
     }
 
     .detailed-page__doc-size {
@@ -36,6 +41,16 @@
     .detailed-page__doc-icon {
       @include mq(sm) {
         display: none;
+      }
+
+      &._mobile {
+        display: none;
+
+        @include mq(sm) {
+          display: block;
+          flex-shrink: 0;
+          margin-right: 2.4rem;
+        }
       }
     }
   }
