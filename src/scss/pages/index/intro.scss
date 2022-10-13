@@ -211,9 +211,10 @@
   &__cat-link {
     font: var(--font-text-t1);
     letter-spacing: -0.02em;
+    transition: opacity 200ms;
 
     &:hover {
-      color: var(--color-primary-light-blue);
+      opacity: 0.4;
     }
 
     &._big {

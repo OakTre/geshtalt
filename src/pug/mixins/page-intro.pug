@@ -1,2 +1,8 @@
 mixin page-intro(name)
   section.page-intro(style={'background-image': `url(assets/images/page-intro/${name}.jpg)`})
+    .site-container
+      .page-intro__link
+        +icon-mono("arrow-top-big")(width="36" height="36" class="page-intro__link-icon")
+        .page-intro__link-info
+          a(href="/") intensive.rugestalt.ru
+          span Сайт мероприятия

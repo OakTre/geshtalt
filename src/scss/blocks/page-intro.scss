@@ -9,4 +9,71 @@
     height: 20rem;
     margin-bottom: 4rem;
   }
+
+  .site-container {
+    position: relative;
+    height: 100%;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 4rem;
+    right: var(--content-padding);
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+
+    &:hover {
+      a {
+        opacity: 0.4;
+      }
+
+      .icon {
+        opacity: 0.4;
+      }
+    }
+
+    @include mq(sm) {
+      bottom: 2.2rem;
+    }
+  }
+
+  &__link-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: 2.6rem;
+    transition: opacity 200ms;
+
+    @include mq(sm) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  &__link-info {
+    a {
+      display: inline-block;
+      font: var(--font-h4);
+      margin-bottom: 0.4rem;
+      transition: opacity 200ms;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        inset: 0;
+        content: "";
+      }
+
+      @include mq(sm) {
+        font: var(--font-text-t1-mobile);
+      }
+    }
+
+    span {
+      display: block;
+      font: var(--font-text-t2);
+      color: rgba($color: #fff, $alpha: 0.3);
+    }
+  }
 }
