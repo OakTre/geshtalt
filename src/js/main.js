@@ -14,6 +14,7 @@ import menu from './modules/menu';
 import validation from './modules/validation';
 import phoneMask from './modules/inputmask';
 import fixedHeader from './modules/fixedHeader';
+import playYT from './modules/playYT';
 
 window.addEventListener("load", () => {
   hidePreloader();
@@ -35,4 +36,5 @@ documenReady(() => {
   validation();
   phoneMask();
   fixedHeader();
+  playYT();
 });
