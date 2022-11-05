@@ -153,6 +153,7 @@
       counter-reset: section;
 
       li {
+        position: relative;
         padding-bottom: 5.6rem;
         margin-bottom: 5.2rem;
         border-bottom: 1px solid var(--color-white-alfa20);
@@ -164,8 +165,18 @@
 
         &::before {
           grid-column: 2 span;
-          counter-increment: section;
-          content: "0"counter(section);
+          content: "";
+        }
+
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          background-color: var(--color-white);
+          content: "";
         }
 
         &:last-child {
@@ -184,10 +195,17 @@
           font: var(--font-text-t1-mobile);
           padding-bottom: 2.4rem;
           margin-bottom: 2.4rem;
+          padding-left: 3.2rem;
 
           &::before {
             display: block;
             margin-bottom: 1.6rem;
+          }
+
+
+          &::after {
+            width: 1.2rem;
+            height: 1.2rem;
           }
         }
       }

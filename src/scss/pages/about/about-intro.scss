@@ -13,6 +13,10 @@
     margin-top: 0;
   }
 
+  .events__heading-info {
+    color: rgba($color: #000000, $alpha: 0.4);
+  }
+
   &__text-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -31,6 +35,7 @@
 
       p {
         font: var(--font-h3);
+        line-height: 110%;
         letter-spacing: -0.04em;
         margin-bottom: 1.5rem;
         max-width: 76.7rem;
@@ -48,6 +53,7 @@
         font: var(--font-text-t2);
         letter-spacing: -0.04em;
         margin-bottom: 1.5rem;
+        color: rgba($color: #000, $alpha: 0.4);
 
         &:nth-last-of-type(1) {
           margin-bottom: 0;
